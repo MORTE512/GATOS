@@ -1,18 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class Vida_gatos : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [Header("Hunger")]
+    [SerializeField] private float _maxHunger = 100f;
+    [SerializeField] private float _hugerDepletionRate = 1f;
+    private float _currentHunger;
+    private float HungerPercent => _currentHunger / _maxHunger;
+
+    public static UnityAction OnCatDied;
+
+    private void Start()
     {
-        
+        _currentHunger = _maxHunger;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        _currentHunger -= _hugerDepletionRate * Time.deltaTime;
+        if (_currentHunger <= 0)
+        {
+            OnCatDied?.Invoke();
+            _currentHunger = 0;
+
+        }
+
     }
+    public void ReplenishHunger(float hungerAmount)
+    {
+        _currentHunger += hungerAmount;
+        if (_currentHunger > _maxHunger) _currentHunger = _maxHunger;
+
+    }
+
+
+
 }
