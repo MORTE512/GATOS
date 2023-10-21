@@ -4,19 +4,22 @@ using UnityEngine;
 using UnityEngine.Events;
 
 
-public class Vida_gatos : MonoBehaviour
+public class Vida_gatos : MonoBehaviour, I_Interact
 {
-
     [Header("Hunger")]
     [SerializeField] private float _maxHunger = 100f;
     [SerializeField] private float _hugerDepletionRate = 1f;
     private float _currentHunger;
     private float HungerPercent => _currentHunger / _maxHunger;
 
+    public bool _shouldEat {private set; get;}
+
     public static UnityAction OnCatDied;
 
     private void Start()
     {
+        Movement.instance.OnClickOutside.AddListener(DisableShouldEat);
+
         _currentHunger = _maxHunger;
     }
 
@@ -38,6 +41,13 @@ public class Vida_gatos : MonoBehaviour
 
     }
 
+    public void Interact()
+    {
+        _shouldEat = true;
+    }
 
-
+    private void DisableShouldEat()
+    {
+        _shouldEat = false;
+    }
 }
