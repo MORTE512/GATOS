@@ -18,7 +18,10 @@ public class Vida_gatos : MonoBehaviour, I_Interact
 
     private void Start()
     {
-        Movement.instance.OnClickOutside.AddListener(DisableShouldEat);
+        //Nos suscribimos al Evento "OnClickOutside" del player.
+        //(Esto nos sirve para que cuando se llame a este evento, el método que agreguemos
+        //en el AddListener se ejecute)
+        Movement.instance.OnClickSpecific.AddListener(DisableShouldEat);
 
         _currentHunger = _maxHunger;
     }

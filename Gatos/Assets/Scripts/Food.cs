@@ -30,7 +30,8 @@ public class Food : MonoBehaviour, I_Interact
     {
         var player = Movement.instance;
 
-        if(Vector3.Distance(player.transform.position, transform.position) > player.Distance)
+        //Si la distancia es mayor que "_distance" entrará en  el if;
+        if (Vector3.Distance(player.transform.position, transform.position) > player.Distance)
         {
             return;
         }

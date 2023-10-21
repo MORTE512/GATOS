@@ -12,8 +12,8 @@ public class Movement : MonoBehaviour
     [SerializeField] private float _distance;
     public float Distance => _distance;
 
-    [SerializeField] private UnityEvent _onClickOutside;
-    public UnityEvent OnClickOutside => _onClickOutside;
+    [SerializeField] private UnityEvent _onClickSpecific;
+    public UnityEvent OnClickSpecific => _onClickSpecific;
 
     private string groundTag = "Ground";
 
@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-            OnClickOutside.Invoke();
+            _onClickSpecific.Invoke();
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
@@ -68,7 +68,7 @@ public class Movement : MonoBehaviour
                     agent.SetDestination(hit.point);
                     agent.isStopped = false;
 
-                    OnClickOutside.Invoke();
+                    _onClickSpecific.Invoke();
                     objectInteractable.Interact();
                 }
                 else
