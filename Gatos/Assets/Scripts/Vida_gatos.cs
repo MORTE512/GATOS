@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
-
-public class Vida_gatos : MonoBehaviour, I_Interact
+public class Vida_gatos : MonoBehaviour
 {
     [Header("Hunger")]
-    [SerializeField] private float _maxHunger = 100f;
-    [SerializeField] private float _hugerDepletionRate = 1f;
-    private float _currentHunger;
-    private float HungerPercent => _currentHunger / _maxHunger;
+    [SerializeField] public float _maxHunger = 100f;
+    [SerializeField] public float _hungerDepletionRate = 1f;
+    public float _currentHunger;
+    public float HungerPercent => _currentHunger / _maxHunger;
+    public Slider SliderHungerCat;
+
+    
 
     public bool _shouldEat {private set; get;}
 
@@ -18,17 +21,16 @@ public class Vida_gatos : MonoBehaviour, I_Interact
 
     private void Start()
     {
-        //Nos suscribimos al Evento "OnClickOutside" del player.
-        //(Esto nos sirve para que cuando se llame a este evento, el método que agreguemos
-        //en el AddListener se ejecute)
-        Movement.instance.OnClickSpecific.AddListener(DisableShouldEat);
+ 
 
         _currentHunger = _maxHunger;
     }
+   
 
     private void Update()
     {
-        _currentHunger -= _hugerDepletionRate * Time.deltaTime;
+        SliderHungerCat.value = _currentHunger;
+        _currentHunger -= _hungerDepletionRate * Time.deltaTime;
         if (_currentHunger <= 0)
         {
             OnCatDied?.Invoke();
@@ -44,13 +46,5 @@ public class Vida_gatos : MonoBehaviour, I_Interact
 
     }
 
-    public void Interact()
-    {
-        _shouldEat = true;
-    }
-
-    private void DisableShouldEat()
-    {
-        _shouldEat = false;
-    }
+    
 }

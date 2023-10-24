@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
 
-public class Movement : MonoBehaviour
+public class Movement : MonoBehaviour, I_Interact
 {
     public static Movement instance;
 
@@ -16,6 +16,10 @@ public class Movement : MonoBehaviour
     public UnityEvent OnClickSpecific => _onClickSpecific;
 
     private string groundTag = "Ground";
+
+    public bool _shouldEat { private set; get; }
+
+
 
     private NavMeshAgent agent;
 
@@ -33,6 +37,10 @@ public class Movement : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         _recogerComida = GetComponent<RecogerComida>();
+        //Nos suscribimos al Evento "OnClickOutside" del player.
+        //(Esto nos sirve para que cuando se llame a este evento, el método que agreguemos
+        //en el AddListener se ejecute)
+        Movement.instance.OnClickSpecific.AddListener(DisableShouldEat);
     }
 
     
@@ -99,4 +107,15 @@ public class Movement : MonoBehaviour
             _objectSelected = null;
         }
     }
+
+    public void Interact()
+    {
+        _shouldEat = true;
+    }
+
+    private void DisableShouldEat()
+    {
+        _shouldEat = false;
+    }
+
 }
