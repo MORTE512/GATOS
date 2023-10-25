@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider))]
@@ -30,7 +28,7 @@ public class Food : MonoBehaviour, I_Interact
     {
         var player = Movement.instance;
 
-        //Si la distancia es mayor que "_distance" entrará en  el if;
+        //Si la distancia es mayor que "_distance" entrarï¿½ en  el if;
         if (Vector3.Distance(player.transform.position, transform.position) > player.Distance)
         {
             return;

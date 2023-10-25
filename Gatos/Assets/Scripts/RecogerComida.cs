@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RecogerComida : MonoBehaviour
 {
     public static RecogerComida instance;
 
-    [Tooltip("Posición donde la comida se recogerá")]
+    [Tooltip("Posiciï¿½n donde la comida se recogerï¿½")]
     [SerializeField] private Transform _foodPosition;
 
     private Food _foodGetted;
@@ -17,21 +15,24 @@ public class RecogerComida : MonoBehaviour
     }
 
     /// <summary>
-    /// Método para recoger la comida;
+    /// Mï¿½todo para recoger la comida;
     /// </summary>
     /// <param name="food"></param>
     public void PickUp(Food food)
     {
-        _foodGetted = food;
+        if (_foodGetted != null)
+        {
+            return;
+        }
         
+        _foodGetted = food;
         _foodGetted.rb.isKinematic = true;
-
         _foodGetted.transform.SetParent(_foodPosition);
         _foodGetted.transform.localPosition = Vector3.zero;
     }
 
     /// <summary>
-    /// Método para soltar la comida;
+    /// Mï¿½todo para soltar la comida;
     /// </summary>
     public void Throw()
     {
@@ -42,6 +43,7 @@ public class RecogerComida : MonoBehaviour
 
         _foodGetted.transform.SetParent(null);
         _foodGetted.rb.isKinematic = false;
+        _foodGetted = null;
     }
 }    
     

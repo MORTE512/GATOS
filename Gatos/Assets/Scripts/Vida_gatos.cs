@@ -1,41 +1,53 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class Vida_gatos : MonoBehaviour
+public class Vida_gatos : MonoBehaviour, I_Interact
 {
     [Header("Hunger")]
     [SerializeField] public float _maxHunger = 100f;
     [SerializeField] public float _hungerDepletionRate = 1f;
-    public float _currentHunger;
-    public float HungerPercent => _currentHunger / _maxHunger;
+    [SerializeField] private float _currentHunger;
     public Slider SliderHungerCat;
 
-    
+
+    [Space]
+    [Header("---- FEEDBACK MATERIALS ----")]
+    private MeshRenderer _meshRenderer;
+    [SerializeField] private Material defaultMaterial;
+    [SerializeField] private Material readyToSellMaterial;
+
+    public Material DefaultMaterial => defaultMaterial;
+    public Material ReadyToSellMaterial => readyToSellMaterial;
 
     public bool _shouldEat {private set; get;}
 
-    public static UnityAction OnCatDied;
-
     private void Start()
     {
- 
-
+        _meshRenderer = GetComponent<MeshRenderer>();
         _currentHunger = _maxHunger;
+        _shouldEat = true;
     }
    
 
     private void Update()
     {
-        SliderHungerCat.value = _currentHunger;
+        //SliderHungerCat.value = _currentHunger;
         _currentHunger -= _hungerDepletionRate * Time.deltaTime;
+
+        // Cambiar esta línea para ajustar al valor necesario para actualizar LevelManager info, en este caso 50% 
+        if (LevelManager.Instance.SalesModeActivated)
+        {
+            if (_currentHunger < _maxHunger / 2)
+            {
+                ChangMaterial(defaultMaterial);
+            }
+        }
+        
         if (_currentHunger <= 0)
         {
-            OnCatDied?.Invoke();
             _currentHunger = 0;
-
+            LevelManager.Instance.RemoveCatToList(this);
+            Destroy(gameObject);
         }
 
     }
@@ -44,7 +56,32 @@ public class Vida_gatos : MonoBehaviour
         _currentHunger += hungerAmount;
         if (_currentHunger > _maxHunger) _currentHunger = _maxHunger;
 
+        // Cambiar esta línea para ajustar al valor necesario para actualizar LevelManager info, en este caso 50% 
+        if (LevelManager.Instance.SalesModeActivated)
+        {
+            if (_currentHunger > _maxHunger / 2)
+            {
+                ChangMaterial(readyToSellMaterial);
+            }
+        }
     }
 
+
+    public bool IsReadyToSell()
+    {
+        // Cambiar esta línea para ajustar al valor necesario para vender el gato, en este caso 50% 
+        return _currentHunger > _maxHunger / 2;
+    }
+
+
+    public void ChangMaterial(Material newMaterial)
+    {
+        _meshRenderer.material = newMaterial;
+    }
     
+    
+
+    public void Interact()
+    {
+    }
 }

@@ -38,7 +38,7 @@ public class Movement : MonoBehaviour, I_Interact
         agent = GetComponent<NavMeshAgent>();
         _recogerComida = GetComponent<RecogerComida>();
         //Nos suscribimos al Evento "OnClickOutside" del player.
-        //(Esto nos sirve para que cuando se llame a este evento, el método que agreguemos
+        //(Esto nos sirve para que cuando se llame a este evento, el mï¿½todo que agreguemos
         //en el AddListener se ejecute)
         Movement.instance.OnClickSpecific.AddListener(DisableShouldEat);
     }
@@ -50,18 +50,27 @@ public class Movement : MonoBehaviour, I_Interact
 
         if (Input.GetMouseButtonDown(0))
         {
-            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-            _onClickSpecific.Invoke();
-
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+            if (LevelManager.Instance.SalesModeActivated)
             {
-                if (hit.collider.CompareTag(groundTag))
+                Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
-                    agent.SetDestination(hit.point);
-                    agent.isStopped = false;
-                    _objectSelected = null;
+                    if (hit.collider.TryGetComponent(out Vida_gatos possibleCatToSell))
+                    {
+                        if (possibleCatToSell.IsReadyToSell())
+                        {
+                            LevelManager.Instance.SellCat(possibleCatToSell);
+                        }
+                    }
+                    else
+                    {
+                        LevelManager.Instance.DisableCatsReadyToSell();
+                    }
                 }
             }
+            
+            RecogerComida.instance.Throw();
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -75,13 +84,16 @@ public class Movement : MonoBehaviour, I_Interact
                     _objectSelected = hit.transform;
                     agent.SetDestination(hit.point);
                     agent.isStopped = false;
-
-                    _onClickSpecific.Invoke();
-                    objectInteractable.Interact();
                 }
-                else
+                else if (hit.collider.CompareTag(groundTag))
                 {
-                    _recogerComida.Throw();
+                    if (UIManager.Instance.IsClientDialogPanelActive())
+                    {
+                        UIManager.Instance.HideClientDialog();
+                    }
+                    
+                    agent.SetDestination(hit.point);
+                    agent.isStopped = false;
                     _objectSelected = null;
                 }
             }
@@ -89,17 +101,17 @@ public class Movement : MonoBehaviour, I_Interact
     }
 
     /// <summary>
-    /// Método para comprobar la distancia entre el objeto clickado y el player;
+    /// Mï¿½todo para comprobar la distancia entre el objeto clickado y el player;
     /// </summary>
     private void CheckObjectDistance()
     {
-        //Si no tenemos objeto seleccionado no se hará la lógica después de este if;
+        //Si no tenemos objeto seleccionado no se harï¿½ la lï¿½gica despuï¿½s de este if;
         if (_objectSelected == null) 
         { 
             return;
         }
 
-        //Si la distancia es menor que "_distance" entrará en  el if;
+        //Si la distancia es menor que "_distance" entrarï¿½ en  el if;
         if (Vector3.Distance(transform.position, _objectSelected.position) <= _distance)
         {
             _objectSelected.GetComponent<I_Interact>().Interact();
