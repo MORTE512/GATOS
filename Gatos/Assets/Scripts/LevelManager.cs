@@ -50,6 +50,10 @@ public class LevelManager : MonoBehaviour
     {
         DeceasedCats += 1f;
         UIManager.Instance.UpdateInfoDeceasedCats();
+        if (DeceasedCats >= 3)
+        {
+            UIManager.Instance.LoseCondition();
+        }
 
     }
 

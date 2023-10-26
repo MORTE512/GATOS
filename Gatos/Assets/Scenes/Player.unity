@@ -2270,6 +2270,7 @@ MonoBehaviour:
   catsCounter: {fileID: 1864085461}
   contadorSellCatsText: {fileID: 1562352997}
   DeceasedCatsText: {fileID: 1632705937}
+  LosePanel: {fileID: 889135477}
 --- !u!82 &1086963050
 AudioSource:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI catsCounter;
     [SerializeField] private TextMeshProUGUI contadorSellCatsText;
     [SerializeField] private TextMeshProUGUI DeceasedCatsText;
+    [SerializeField] private GameObject LosePanel;
     
 
     private void Awake()
@@ -65,6 +66,11 @@ public class UIManager : MonoBehaviour
     public void UpdateInfoDeceasedCats()
     {
         DeceasedCatsText.text = LevelManager.instance.DeceasedCats.ToString();
+    }
+
+    public void LoseCondition()
+    {
+        LosePanel.SetActive(true);
     }
 
 
