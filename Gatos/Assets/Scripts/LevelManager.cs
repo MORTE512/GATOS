@@ -5,8 +5,11 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     // Patrón SINGLETON, para evitar más de una clase igual al mismo tiempo
-    private static LevelManager instance;
+    public static LevelManager instance;
     public static LevelManager Instance => instance;
+    public float SellCatsCount = 0f;
+    public float DeceasedCats = 0;
+
 
 
     [SerializeField] private List<Vida_gatos> catList = new List<Vida_gatos>();
@@ -40,13 +43,24 @@ public class LevelManager : MonoBehaviour
     public void RemoveCatToList(Vida_gatos catToRemove)
     {
         catList.Remove(catToRemove);
+        UIManager.Instance.UpdateInfoNumberOfCats();
+    }
+
+    public void AddDeceasedCats() 
+    {
+        DeceasedCats += 1f;
+        UIManager.Instance.UpdateInfoDeceasedCats();
+
     }
 
     public void SellCat(Vida_gatos catToSell)
     {
         RemoveCatToList(catToSell);
+        SellCatsCount += 1f;
+        UIManager.Instance.UpdateInfoNumberOfSellCats();
         Destroy(catToSell.gameObject);
         DisableCatsReadyToSell();
+        
     }
 
     public void ShowCatsReadyToSell()
@@ -76,5 +90,11 @@ public class LevelManager : MonoBehaviour
         }
         salesModeActivated = false;
     }
-    
+
+    public int ReturnCountNumberOfCats()
+    {
+        return catList.Count;
+    }
+
+
 }

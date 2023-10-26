@@ -1,15 +1,21 @@
+using TMPro;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    private static UIManager instance;
+    public static UIManager instance;
     public static UIManager Instance => instance;
 
     [SerializeField] private GameObject panelClientDialog;
-
+    [SerializeField] private TextMeshProUGUI catsCounter;
+    [SerializeField] private TextMeshProUGUI contadorSellCatsText;
+    [SerializeField] private TextMeshProUGUI DeceasedCatsText;
     
+
     private void Awake()
     {
+       
+
         if (instance == null)
         {
             instance = this;
@@ -19,6 +25,16 @@ public class UIManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void Start()
+    {
+        UpdateInfoNumberOfCats();
+        UpdateInfoNumberOfSellCats();
+        UpdateInfoDeceasedCats();
+
+
+    }
+
 
     public void ShowClientDialog()
     {
@@ -34,4 +50,23 @@ public class UIManager : MonoBehaviour
     {
         return panelClientDialog.activeSelf;
     }
+
+
+    public void UpdateInfoNumberOfCats()
+    {
+        catsCounter.text = LevelManager.Instance.ReturnCountNumberOfCats().ToString();
+    }
+
+    public void UpdateInfoNumberOfSellCats()
+    {
+        contadorSellCatsText.text = LevelManager.instance.SellCatsCount.ToString();
+    }
+
+    public void UpdateInfoDeceasedCats()
+    {
+        DeceasedCatsText.text = LevelManager.instance.DeceasedCats.ToString();
+    }
+
+
+
 }

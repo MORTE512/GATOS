@@ -31,7 +31,7 @@ public class Vida_gatos : MonoBehaviour, I_Interact
 
     private void Update()
     {
-        //SliderHungerCat.value = _currentHunger;
+        SliderHungerCat.value = _currentHunger;
         _currentHunger -= _hungerDepletionRate * Time.deltaTime;
 
         // Cambiar esta línea para ajustar al valor necesario para actualizar LevelManager info, en este caso 50% 
@@ -47,7 +47,9 @@ public class Vida_gatos : MonoBehaviour, I_Interact
         {
             _currentHunger = 0;
             LevelManager.Instance.RemoveCatToList(this);
+            LevelManager.Instance.AddDeceasedCats();
             Destroy(gameObject);
+
         }
 
     }
