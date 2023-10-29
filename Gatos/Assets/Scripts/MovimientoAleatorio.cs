@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 public class MovimientoAleatorio : MonoBehaviour
 {
-    public float velocidadMaxima = 5f;
+    public float velocidadMaxima;
     public float tiempoEspera = 5f;
 
     private NavMeshAgent navMeshAgent;
