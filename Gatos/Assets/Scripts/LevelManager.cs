@@ -43,7 +43,7 @@ public class LevelManager : MonoBehaviour
     public void RemoveCatToList(Vida_gatos catToRemove)
     {
         catList.Remove(catToRemove);
-        UIManager.Instance.UpdateInfoNumberOfCats();
+        //UIManager.Instance.UpdateInfoNumberOfCats();
     }
 
     public void AddDeceasedCats() 

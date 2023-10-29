@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance => instance;
 
     [SerializeField] private GameObject panelClientDialog;
-    [SerializeField] private TextMeshProUGUI catsCounter;
+    //[SerializeField] private TextMeshProUGUI catsCounter;
     [SerializeField] private TextMeshProUGUI contadorSellCatsText;
     [SerializeField] private TextMeshProUGUI DeceasedCatsText;
     [SerializeField] private GameObject LosePanel;
@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        UpdateInfoNumberOfCats();
+       // UpdateInfoNumberOfCats();
         UpdateInfoNumberOfSellCats();
         UpdateInfoDeceasedCats();
 
@@ -53,10 +53,10 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public void UpdateInfoNumberOfCats()
-    {
-        catsCounter.text = LevelManager.Instance.ReturnCountNumberOfCats().ToString();
-    }
+    //public void UpdateInfoNumberOfCats()
+    //{
+      //  catsCounter.text = LevelManager.Instance.ReturnCountNumberOfCats().ToString();
+   // }
 
     public void UpdateInfoNumberOfSellCats()
     {
