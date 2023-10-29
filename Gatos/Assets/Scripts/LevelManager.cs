@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance => instance;
     public float SellCatsCount = 0f;
     public float DeceasedCats = 0;
+    public float MaximCats; //Cantidad Maxima de gatos en tiempo real
 
 
 
@@ -37,17 +38,30 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        MaximCats = catList.Count;
         catList = FindObjectsOfType<Vida_gatos>().ToList();
     }
 
     public void RemoveCatToList(Vida_gatos catToRemove)
     {
+       
         catList.Remove(catToRemove);
         //UIManager.Instance.UpdateInfoNumberOfCats();
+        MaximCats = catList.Count;
+       
+    }
+
+    public void WinCondition()
+    {
+        if (MaximCats <= 0)
+        {
+            UIManager.instance.WinCondition();
+        }
     }
 
     public void AddDeceasedCats() 
     {
+        MaximCats -= 1f;
         DeceasedCats += 1f;
         UIManager.Instance.UpdateInfoDeceasedCats();
         if (DeceasedCats >= 3)
@@ -61,6 +75,7 @@ public class LevelManager : MonoBehaviour
     {
         RemoveCatToList(catToSell);
         SellCatsCount += 1f;
+        WinCondition();
         UIManager.Instance.UpdateInfoNumberOfSellCats();
         Destroy(catToSell.gameObject);
         DisableCatsReadyToSell();

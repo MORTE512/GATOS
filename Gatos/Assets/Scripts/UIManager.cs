@@ -11,7 +11,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI contadorSellCatsText;
     [SerializeField] private TextMeshProUGUI DeceasedCatsText;
     [SerializeField] private GameObject LosePanel;
-    
+    [SerializeField] private GameObject WinaPanel;
+
 
     private void Awake()
     {
@@ -73,6 +74,9 @@ public class UIManager : MonoBehaviour
         LosePanel.SetActive(true);
     }
 
-
+    public void WinCondition()
+    {
+        WinaPanel.SetActive(true);
+    }
 
 }
