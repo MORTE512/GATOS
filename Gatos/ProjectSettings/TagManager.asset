@@ -9,6 +9,7 @@ TagManager:
   - Cat
   - SonidoGeneral
   - SonidoMusica
+  - FirstWP
   layers:
   - Default
   - TransparentFX
