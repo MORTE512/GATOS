@@ -27,6 +27,7 @@ public class Movement : MonoBehaviour, I_Interact
 
     private Transform _objectSelected;
     private RecogerComida _recogerComida;
+    private GameObject _target;
 
     private void Awake()
     {
@@ -47,6 +48,10 @@ public class Movement : MonoBehaviour, I_Interact
     void Update()
     {
         CheckObjectDistance();
+        if (_target != null)
+        {
+            agent.SetDestination(_target.transform.position);
+        }
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -82,7 +87,8 @@ public class Movement : MonoBehaviour, I_Interact
                 if (hit.collider.TryGetComponent(out I_Interact objectInteractable))
                 {
                     _objectSelected = hit.transform;
-                    agent.SetDestination(hit.point);
+                    _target = hit.collider.gameObject;
+                    agent.SetDestination(_target.transform.position);
                     agent.isStopped = false;
                 }
                 else if (hit.collider.CompareTag(groundTag))
@@ -92,6 +98,7 @@ public class Movement : MonoBehaviour, I_Interact
                         UIManager.Instance.HideClientDialog();
                     }
                     
+                    _target = null;
                     agent.SetDestination(hit.point);
                     agent.isStopped = false;
                     _objectSelected = null;
@@ -117,6 +124,7 @@ public class Movement : MonoBehaviour, I_Interact
             _objectSelected.GetComponent<I_Interact>().Interact();
             agent.isStopped = true;
             _objectSelected = null;
+            _target = null;
         }
     }
 

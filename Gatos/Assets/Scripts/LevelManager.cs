@@ -38,8 +38,8 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        MaximCats = catList.Count;
         catList = FindObjectsOfType<Vida_gatos>().ToList();
+        MaximCats = catList.Count;
     }
 
     public void RemoveCatToList(Vida_gatos catToRemove)
@@ -68,7 +68,12 @@ public class LevelManager : MonoBehaviour
         {
             UIManager.Instance.LoseCondition();
         }
-
+        else
+        {
+            // Check wind condition
+            WinCondition();
+        }
+        
     }
 
     public void SellCat(Vida_gatos catToSell)

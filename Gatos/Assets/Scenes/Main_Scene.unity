@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17447984, g: 0.21822098, b: 0.30046362, a: 1}
+  m_IndirectSpecularColor: {r: 0.17447957, g: 0.21822065, b: 0.30046302, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6590,6 +6590,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 113983726003110392, guid: 11f524aa636bf6d419cb9c3218dc4de7, type: 3}
+      propertyPath: _distance
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 113983726003110399, guid: 11f524aa636bf6d419cb9c3218dc4de7, type: 3}
       propertyPath: m_Speed
       value: 13
@@ -6905,6 +6909,7 @@ GameObject:
   - component: {fileID: 3467637389682758931}
   - component: {fileID: 5297916593383026747}
   - component: {fileID: 9094098967562819272}
+  - component: {fileID: 9094098967562819273}
   m_Layer: 0
   m_Name: subtool1
   m_TagString: Untagged
@@ -7390,3 +7395,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.924655, y: 2.572117, z: 1.6876926}
   m_Center: {x: 0.00000083841945, y: -0.0000003577586, z: 0.8438433}
+--- !u!114 &9094098967562819273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5417102571560322844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e74ddc2366367f4438cd731d1b0af8fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodPrefab: {fileID: 7801232740242545374, guid: e1ef4b1afd630484c8ba590dea90d110, type: 3}
