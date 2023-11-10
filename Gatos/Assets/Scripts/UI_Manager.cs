@@ -19,10 +19,9 @@ public class UI_Manager : MonoBehaviour
     public List<AudioSource> MusicSoundSources = new List<AudioSource>();
     public float generalVolume = 1f;
     public float musicVolume = 1f;
-
-    //sonido botones
-    private Button button; // Referencia al componente Button del botón
-    private AudioSource audioSource; // Referencia al componente AudioSource
+    public Slider MusicSlider;
+    public Slider SourcGeneralSoundSlider;
+    
 
     //idiomas
     private string currentLanguageCode;
@@ -34,6 +33,8 @@ public class UI_Manager : MonoBehaviour
 
     // Variable para mantener el valor de exposición
     private float exposureValue;
+
+    //sliders volumen
 
     private void Start()
     {
@@ -52,12 +53,9 @@ public class UI_Manager : MonoBehaviour
                 MusicSoundSources.Add(source);
             }
         }
-        // Obtener los componentes Button y AudioSource del botón
-        button = GetComponent<Button>();
-        audioSource = GetComponent<AudioSource>();
+       
 
-        // Asignar el método PlaySound al evento onClick del botón
-        //button.onClick.AddListener(PlaySound);
+       
 
         currentLanguageCode = PlayerPrefs.GetString("Language", "en");
         // Seleccionar el idioma actual
@@ -80,44 +78,45 @@ public class UI_Manager : MonoBehaviour
 
     }
 
-    public void SetGeneralVolume(float volume)
+    public void SetGeneralVolume()
     {
         // Actualizar el volumen de la categoría SonidoMaster
-        generalVolume = volume;
+        generalVolume = SourcGeneralSoundSlider.value;
 
         // Actualizar el volumen de la categoría SonidoMaster
         foreach (AudioSource source in GeneralSoundSources)
         {
             source.volume = generalVolume;
         }
+        PlayerPrefs.SetFloat("SourcGeneralSoundSlider", SourcGeneralSoundSlider.value);
+        PlayerPrefs.Save();
     }
 
-    public void SetMusicVolume(float volume)
+    public void SetMusicVolume()
     {
         // Actualizar el volumen de la categoría SonidoVFX
-        musicVolume = volume;
+        musicVolume = MusicSlider.value;
 
         // Actualizar el volumen de la categoría SonidoVFX
         foreach (AudioSource source in MusicSoundSources)
         {
             source.volume = musicVolume;
         }
+
+        PlayerPrefs.SetFloat("musicValue", MusicSlider.value);
+        PlayerPrefs.Save();
     }
 
-    public void PlaySound()
-    {
-        // Reproducir el sonido del AudioSource
-        audioSource.Play();
-    }
+  
 
     public void SetLanguage(string newLanguageCode)
     {
         Dictionary<string, Locale> languageDic = new Dictionary<string, Locale>
         {
-            {"ca", LocalizationSettings.AvailableLocales.Locales[0]},
-            {"en", LocalizationSettings.AvailableLocales.Locales[1]},
-            {"fr", LocalizationSettings.AvailableLocales.Locales[2]},
-            {"es", LocalizationSettings.AvailableLocales.Locales[3]}
+            {"es", LocalizationSettings.AvailableLocales.Locales[0]},
+            {"ca", LocalizationSettings.AvailableLocales.Locales[1]},
+            {"en", LocalizationSettings.AvailableLocales.Locales[2]},
+            {"fr", LocalizationSettings.AvailableLocales.Locales[3]}
         };
 
         if (languageDic.ContainsKey(newLanguageCode))
@@ -144,10 +143,7 @@ public class UI_Manager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    public void ActivarMainMenu()
-    {
-
-    }
+    
 
 
 }
