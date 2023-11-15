@@ -123,6 +123,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: fecb398201ac1a049ae3169355cafa1a, type: 2}
+--- !u!1 &10931802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4232572402376233309, guid: 6a898cc71744ce746a3a809639d2cd6a, type: 3}
+  m_PrefabInstance: {fileID: 610069406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &10931810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10931802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa122ea775b97b4469ae130645392b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1007889095}
 --- !u!1 &51137856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,11 +1679,27 @@ PrefabInstance:
       objectReference: {fileID: 592024563}
     - target: {fileID: 4232572401503570973, guid: 6a898cc71744ce746a3a809639d2cd6a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4232572401503570973, guid: 6a898cc71744ce746a3a809639d2cd6a, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232572401702269514, guid: 6a898cc71744ce746a3a809639d2cd6a, type: 3}
+      propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232572402150029856, guid: 6a898cc71744ce746a3a809639d2cd6a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232572402150029856, guid: 6a898cc71744ce746a3a809639d2cd6a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232572402150029856, guid: 6a898cc71744ce746a3a809639d2cd6a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4232572402376233304, guid: 6a898cc71744ce746a3a809639d2cd6a, type: 3}
       propertyPath: m_RootOrder
@@ -2643,6 +2677,11 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!223 &1007889095 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4232572401702269510, guid: 6a898cc71744ce746a3a809639d2cd6a, type: 3}
+  m_PrefabInstance: {fileID: 610069406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1057985580
 GameObject:
   m_ObjectHideFlags: 0
