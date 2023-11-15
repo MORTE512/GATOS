@@ -29,7 +29,9 @@ public class CountdownTimer : MonoBehaviour
                 {
                     tiempoRestante = 0;
                     panelLose.SetActive(true); // Activa el panel cuando el contador llega a cero
+
                     seReprodujoSonido = true; // Ajusta el flag para que no se reproduzca el sonido repetidamente
+                    Time.timeScale = 0f;
                 }
                 ActualizarUI();
             }

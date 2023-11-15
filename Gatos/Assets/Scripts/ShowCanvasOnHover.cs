@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class ShowCanvasOnHover : MonoBehaviour
 {
-    public Canvas canvas;
+    private Canvas canvas;
 
     void Start()
     {
+        // Obtén el Canvas como hijo del objeto
+        canvas = GetComponentInChildren<Canvas>();
+
         // Asegúrate de que el canvas esté configurado correctamente
         if (canvas != null)
         {
