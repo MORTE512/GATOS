@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections.Generic;
 
 public class Client : MonoBehaviour, I_Interact
 {
@@ -9,36 +10,49 @@ public class Client : MonoBehaviour, I_Interact
 
     private NavMeshAgent _navMeshAgent;
     private Transform _target;
-    private bool _imWalking;
+    public Animator animator;
+
+    private int counterRemainingDistance;
+
+    private bool courotineActive = false;
 
     private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _target = WPClientsManager.Instance.ReturnRandomWp();
-        _imWalking = true;
+        animator.SetBool("walking", true);
     }
-
 
     private void Update()
     {
-        if (_imWalking)
+        _navMeshAgent.SetDestination(_target.position);
+        if (Vector3.Distance(transform.position, _target.transform.position) < 2f)
         {
-            _navMeshAgent.SetDestination(_target.position);
-            if (_navMeshAgent.remainingDistance < _navMeshAgent.stoppingDistance)
-            {
-                _imWalking = false;
+            counterRemainingDistance++;
+             
+            if (!courotineActive)
                 StartCoroutine(IdlePlayer());
-            }
         }
+             
     }
-
 
     IEnumerator IdlePlayer()
     {
+        if (counterRemainingDistance < 2)
+        {
+            yield break;
+        }
+
+        courotineActive = true;
+        animator.SetBool("walking", false);
+        _navMeshAgent.isStopped = true;
         float randomIdleTime = Random.Range(minTimeIdle, maxTimeIdle);
         yield return new WaitForSeconds(randomIdleTime);
         _target = WPClientsManager.Instance.ReturnRandomWp();
-        _imWalking = true;
+        courotineActive = false;
+        _navMeshAgent.isStopped = false;
+        animator.SetBool("walking", true);
+
     }
 
 
@@ -47,3 +61,4 @@ public class Client : MonoBehaviour, I_Interact
         UIManager.Instance.ShowClientDialog();
     }
 }
+

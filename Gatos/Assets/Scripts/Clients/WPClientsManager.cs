@@ -24,7 +24,7 @@ public class WPClientsManager : MonoBehaviour
 
     public Transform ReturnRandomWp()
     {
-        int randomIndex = Random.Range(0, wpClients.Length);
+        int randomIndex = Random.Range(0, wpClients.Length -1);
         return wpClients[randomIndex];
     }
 
