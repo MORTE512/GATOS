@@ -20,7 +20,47 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33994133504
-    m_Key: New Entry 1
+    m_Key: ' Opciones'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567057425813504
+    m_Key: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567061594951680
+    m_Key: Volumen general del juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567067097878528
+    m_Key: "Volumen de la m\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568125945729024
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568128449728512
+    m_Key: Brillo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568130119061504
+    m_Key: Idiomas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568131196997632
+    m_Key: Contador de tiempo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568596672466944
+    m_Key: "N\xFAmero de gatos dados en adopci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568726796554240
+    m_Key: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568730013585408
+    m_Key: Gatos fallecidos
     m_Metadata:
       m_Items: []
   m_Metadata:

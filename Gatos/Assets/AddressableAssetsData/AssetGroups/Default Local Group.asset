@@ -16,7 +16,11 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 5fa0d4b1645118545ad9e07fb35cb709
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 78d47701bdac5c44f83962de6b45733a
+    m_Address: Assets/Scenes/MainMenu_Profiles/Post-process Volume Profile.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 65098ed56297fbe4bb05ce95216e1a87, type: 2}
   m_SchemaSet:

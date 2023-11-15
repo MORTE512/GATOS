@@ -22,6 +22,46 @@ MonoBehaviour:
     m_Localized: Jugar
     m_Metadata:
       m_Items: []
+  - m_Id: 33994133504
+    m_Localized: Opcions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567057425813504
+    m_Localized: Sortir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567061594951680
+    m_Localized: Volum general del joc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567067097878528
+    m_Localized: " Volum de la m\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568128449728512
+    m_Localized: Lluminositat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568130119061504
+    m_Localized: Idiomes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568131196997632
+    m_Localized: Comptador de temps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568596672466944
+    m_Localized: "Nombre de gats donats en adopci\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568730013585408
+    m_Localized: Gats difunts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568726796554240
+    m_Localized: Tornar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

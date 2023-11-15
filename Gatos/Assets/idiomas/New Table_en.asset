@@ -22,6 +22,46 @@ MonoBehaviour:
     m_Localized: Play
     m_Metadata:
       m_Items: []
+  - m_Id: 33994133504
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567057425813504
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567061594951680
+    m_Localized: Game volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567067097878528
+    m_Localized: Music volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568128449728512
+    m_Localized: Brightness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568130119061504
+    m_Localized: Languages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568131196997632
+    m_Localized: ' Time counter'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568596672466944
+    m_Localized: Number of cats adopted
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568730013585408
+    m_Localized: Deceased cats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568726796554240
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

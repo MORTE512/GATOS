@@ -22,6 +22,46 @@ MonoBehaviour:
     m_Localized: Jouer
     m_Metadata:
       m_Items: []
+  - m_Id: 33994133504
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567057425813504
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567061594951680
+    m_Localized: Volume du jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567067097878528
+    m_Localized: Volume de la musique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568128449728512
+    m_Localized: "Luminosit\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568130119061504
+    m_Localized: Langues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568131196997632
+    m_Localized: Compteur de temps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568596672466944
+    m_Localized: "Nombre de chats adopt\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568730013585408
+    m_Localized: "Chats d\xE9c\xE9d\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1568726796554240
+    m_Localized: Retour
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
