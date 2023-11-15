@@ -64,7 +64,7 @@ public class CountdownTimer : MonoBehaviour
         // Aquí puedes activar el panel de pausa si lo tienes
     }
 
-    void ReanudarJuego()
+    public void ReanudarJuego()
     {
         juegoPausado = false;
         Time.timeScale = 1f;
