@@ -27,7 +27,10 @@ public class Movement : MonoBehaviour, I_Interact
 
     private Transform _objectSelected;
     private RecogerComida _recogerComida;
-    private GameObject _target;
+    private Vector3 _target;
+    private GameObject _inMovementTarget;
+
+    public Animator animator;
 
     private void Awake()
     {
@@ -42,16 +45,21 @@ public class Movement : MonoBehaviour, I_Interact
         //(Esto nos sirve para que cuando se llame a este evento, el m�todo que agreguemos
         //en el AddListener se ejecute)
         Movement.instance.OnClickSpecific.AddListener(DisableShouldEat);
+       
     }
 
     
     void Update()
     {
         CheckObjectDistance();
-        if (_target != null)
+
+        if (_inMovementTarget != null)
         {
-            agent.SetDestination(_target.transform.position);
+            _target = _inMovementTarget.transform.position;
         }
+        agent.SetDestination(_target);
+
+
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -87,9 +95,12 @@ public class Movement : MonoBehaviour, I_Interact
                 if (hit.collider.TryGetComponent(out I_Interact objectInteractable))
                 {
                     _objectSelected = hit.transform;
-                    _target = hit.collider.gameObject;
-                    agent.SetDestination(_target.transform.position);
+                    _inMovementTarget = hit.collider.gameObject;
+                    _target = _inMovementTarget.transform.position;
+                    agent.SetDestination(_target);
                     agent.isStopped = false;
+                    animator.SetBool("jogging", true);
+
                 }
                 else if (hit.collider.CompareTag(groundTag))
                 {
@@ -97,11 +108,14 @@ public class Movement : MonoBehaviour, I_Interact
                     {
                         UIManager.Instance.HideClientDialog();
                     }
-                    
-                    _target = null;
-                    agent.SetDestination(hit.point);
-                    agent.isStopped = false;
+
+                    _target = hit.point;
+                    agent.SetDestination(_target);               
+                    agent.isStopped = false;  
+                    _inMovementTarget = null;
                     _objectSelected = null;
+                    animator.SetBool("jogging", true);
+
                 }
             }
         }
@@ -112,19 +126,23 @@ public class Movement : MonoBehaviour, I_Interact
     /// </summary>
     private void CheckObjectDistance()
     {
-        //Si no tenemos objeto seleccionado no se har� la l�gica despu�s de este if;
-        if (_objectSelected == null) 
-        { 
-            return;
-        }
 
         //Si la distancia es menor que "_distance" entrar� en  el if;
-        if (Vector3.Distance(transform.position, _objectSelected.position) <= _distance)
+        if (Vector3.Distance(transform.position, _target) <= _distance)
         {
-            _objectSelected.GetComponent<I_Interact>().Interact();
+            animator.SetBool("jogging", false);
             agent.isStopped = true;
+            _target = transform.position;
+
+
+            //Si no tenemos objeto seleccionado no se har� la l�gica despu�s de este if;
+            if (_objectSelected == null) 
+            { 
+                return;
+            }
+            _objectSelected.GetComponent<I_Interact>().Interact();
             _objectSelected = null;
-            _target = null;
+            _inMovementTarget = null;
         }
     }
 
