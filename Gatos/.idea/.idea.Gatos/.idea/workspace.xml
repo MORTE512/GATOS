@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="310e7603-00f5-42ba-8013-1563e5e7da12" name="Changes" comment="" />
+    <list default="true" id="310e7603-00f5-42ba-8013-1563e5e7da12" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gatos/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cojin_low_def.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cojin_low_def.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/cat1_barraGrande.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/cat1_barraGrande.prefab" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

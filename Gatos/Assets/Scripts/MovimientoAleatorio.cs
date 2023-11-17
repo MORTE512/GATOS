@@ -9,6 +9,8 @@ public class MovimientoAleatorio : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     private bool esperando;
 
+    [SerializeField] private Animator animator;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -42,6 +44,7 @@ public class MovimientoAleatorio : MonoBehaviour
             if (navMeshAgent.remainingDistance < 0.1f)
             {
                 esperando = true;
+               // animator.SetBool("isIdle", true);
             }
         }
     }
@@ -49,7 +52,8 @@ public class MovimientoAleatorio : MonoBehaviour
     void ObtenerNuevoDestino()
     {
         // Obtener un punto aleatorio dentro del NavMesh
-        Vector3 randomDirection = Random.insideUnitSphere * 10f; // Ajusta el radio según sea necesario
+        Vector3 randomDirection = Random.insideUnitSphere * 10f;
+        //animator.SetBool("isIdle", false);// Ajusta el radio según sea necesario
         randomDirection += transform.position;
 
         NavMeshHit hit;

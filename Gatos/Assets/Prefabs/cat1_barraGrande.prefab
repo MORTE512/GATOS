@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 2898692334826505300}
   - component: {fileID: 2898692334826505299}
   - component: {fileID: 2898692334826505298}
+  - component: {fileID: 1196068294245297605}
   m_Layer: 0
   m_Name: cat1_barraGrande
   m_TagString: Cat
@@ -133,8 +134,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2898692334826505322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.87, y: -0.61, z: 11.738107}
-  m_LocalScale: {x: 0.018553142, y: 0.018553142, z: 0.018553142}
+  m_LocalPosition: {x: -9.87, y: -0.61, z: 11.73811}
+  m_LocalScale: {x: 0.01855314, y: 0.01855314, z: 0.01855314}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2898692335301730552}
@@ -282,6 +283,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa122ea775b97b4469ae130645392b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1196068294245297605
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2898692334826505322}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48749e695dd2e874e94e55589d1959cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2898692334893522788
 GameObject:
   m_ObjectHideFlags: 0
