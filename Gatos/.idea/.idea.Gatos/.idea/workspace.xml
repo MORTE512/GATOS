@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="310e7603-00f5-42ba-8013-1563e5e7da12" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gatos/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cojin_low_def.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cojin_low_def.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/cat1_barraGrande.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/cat1_barraGrande.prefab" afterDir="false" />
-    </list>
+    <list default="true" id="310e7603-00f5-42ba-8013-1563e5e7da12" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +73,7 @@
       <workItem from="1698230488996" duration="7359000" />
       <workItem from="1699542491773" duration="6999000" />
       <workItem from="1699627018260" duration="3139000" />
+      <workItem from="1700244030982" duration="3000" />
     </task>
     <servers />
   </component>

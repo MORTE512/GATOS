@@ -62,4 +62,15 @@ public class MovimientoAleatorio : MonoBehaviour
         // Establecer el nuevo destino
         navMeshAgent.SetDestination(hit.position);
     }
+
+    public void StopCatAgent()
+    {
+        navMeshAgent.isStopped = true;
+    }
+
+    public void StartCatAgent()
+    {
+        navMeshAgent.isStopped = false;
+    }
+
 }
