@@ -20,7 +20,15 @@ public class Puerta : MonoBehaviour
             Destroy(gameObject);
         }
     }
-   
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Client"))
+        {
+            Debug.Log("hola");
+            _animator_puerta.SetTrigger("Abrir_puerta");
+        }
+
+    }
 
 
 }

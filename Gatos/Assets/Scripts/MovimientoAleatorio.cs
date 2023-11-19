@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -5,7 +6,16 @@ public class MovimientoAleatorio : MonoBehaviour
 {
     public float velocidadMaxima;
     public float tiempoEspera = 5f;
-
+    public GameObject Mesh_Gato_No_Subrallado;
+    public GameObject Mesh_Gato_Subrallado;
+    public GameObject Mesh_Gato_Subrallado_Shell;
+    public GameObject Mesh_Gato_Subrallado_Low_live;
+    public float speed;
+    public float stop;
+    public Rigidbody RB_Mesh_Gato_No_Subrallado;
+    public Rigidbody RB_Mesh_Mesh_Gato_Subrallado;
+    public Rigidbody RB_Mesh_Gato_Subrallado_Shell;
+    public Rigidbody RB_Mesh_Gato_Subrallado_Low_live;
     private NavMeshAgent navMeshAgent;
     private bool esperando;
 
@@ -13,6 +23,7 @@ public class MovimientoAleatorio : MonoBehaviour
 
     void Start()
     {
+       
         navMeshAgent = GetComponent<NavMeshAgent>();
         if (navMeshAgent == null)
         {
@@ -31,11 +42,13 @@ public class MovimientoAleatorio : MonoBehaviour
         {
             // Esperar durante un tiempo
             tiempoEspera -= Time.deltaTime;
-
+            
             if (tiempoEspera <= 0f)
             {
                 ObtenerNuevoDestino();
-                tiempoEspera = 5f; // Reiniciar el tiempo de espera
+                tiempoEspera = 5f;
+                
+                // Reiniciar el tiempo de espera
             }
         }
         else
@@ -44,7 +57,8 @@ public class MovimientoAleatorio : MonoBehaviour
             if (navMeshAgent.remainingDistance < 0.1f)
             {
                 esperando = true;
-               // animator.SetBool("isIdle", true);
+                StartCoroutine(CorrutinaIdle());
+               
             }
         }
     }
@@ -66,11 +80,42 @@ public class MovimientoAleatorio : MonoBehaviour
     public void StopCatAgent()
     {
         navMeshAgent.isStopped = true;
+       
     }
 
     public void StartCatAgent()
     {
         navMeshAgent.isStopped = false;
+        
     }
 
+    public void Arriba()
+    {
+        RB_Mesh_Gato_No_Subrallado.velocity = transform.up * speed;
+        RB_Mesh_Mesh_Gato_Subrallado.velocity = transform.up * speed;
+        RB_Mesh_Gato_Subrallado_Low_live.velocity = transform.up * speed;
+        RB_Mesh_Gato_Subrallado_Shell.velocity = transform.up * speed;
+    }
+    public void Abajo()
+    {
+        RB_Mesh_Gato_No_Subrallado.velocity = transform.up * -speed;
+        RB_Mesh_Mesh_Gato_Subrallado.velocity = transform.up * -speed;
+        RB_Mesh_Gato_Subrallado_Low_live.velocity = transform.up * -speed;
+        RB_Mesh_Gato_Subrallado_Shell.velocity = transform.up * -speed;
+    }
+    public void Stop()
+    {
+        RB_Mesh_Gato_No_Subrallado.velocity = transform.up * stop;
+        RB_Mesh_Mesh_Gato_Subrallado.velocity = transform.up * stop;
+        RB_Mesh_Gato_Subrallado_Low_live.velocity = transform.up * stop;
+        RB_Mesh_Gato_Subrallado_Shell.velocity = transform.up * stop;
+    }
+
+    IEnumerator CorrutinaIdle()
+    {
+        animator.SetBool("isIdle", true);
+        yield return new WaitForSeconds(4.8f);
+        animator.SetBool("isIdle", false);
+        esperando = false;
+    }
 }

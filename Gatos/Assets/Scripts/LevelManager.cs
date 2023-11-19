@@ -85,6 +85,7 @@ public class LevelManager : MonoBehaviour
         Destroy(catToSell.gameObject);
         DisableCatsReadyToSell();
         
+
     }
 
     public void ShowCatsReadyToSell()
@@ -113,6 +114,7 @@ public class LevelManager : MonoBehaviour
             }
         }
         salesModeActivated = false;
+     
     }
 
     public int ReturnCountNumberOfCats()
