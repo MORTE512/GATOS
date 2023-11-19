@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main_Scene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/Main_Scene_Morte.unity
+    guid: 8c9f6ac990b44be4c92520bb0d10f088
+  - enabled: 1
+    path: Assets/Scenes/Main_Scene_Sergio.unity
+    guid: 03591005754cb6f47a3fd4f0755a927b
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 29fbdbd20ddb7e9439c9c85be92fefe4, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: eccfde16dd1538e4cbf4ee3dcd2f11f2, type: 2}
