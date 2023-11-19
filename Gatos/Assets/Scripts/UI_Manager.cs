@@ -21,7 +21,7 @@ public class UI_Manager : MonoBehaviour
     public float musicVolume = 1f;
     public Slider MusicSlider;
     public Slider SourcGeneralSoundSlider;
-    
+
 
     //idiomas
     private string currentLanguageCode;
@@ -53,9 +53,9 @@ public class UI_Manager : MonoBehaviour
                 MusicSoundSources.Add(source);
             }
         }
-       
 
-       
+
+
 
         currentLanguageCode = PlayerPrefs.GetString("Language", "en");
         // Seleccionar el idioma actual
@@ -107,7 +107,7 @@ public class UI_Manager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-  
+
 
     public void SetLanguage(string newLanguageCode)
     {
@@ -134,7 +134,7 @@ public class UI_Manager : MonoBehaviour
 
     public void SetExposure()
     {
-        
+
         // Modifica la compensación de exposición con el valor del slider
         autoExposure.keyValue.Override(sliderBrillo.value);
 
@@ -143,7 +143,7 @@ public class UI_Manager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    
+
 
 
 }

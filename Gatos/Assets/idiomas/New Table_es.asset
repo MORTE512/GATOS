@@ -51,7 +51,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1568596672466944
-    m_Localized: "N\xFAmero de gatos dados en adopci\xF3n"
+    m_Localized: "N\xFAmero de gatos dados en adopcion"
     m_Metadata:
       m_Items: []
   - m_Id: 1568730013585408
@@ -68,6 +68,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1814815613210624
     m_Localized: Has perdido!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3250850189094912
+    m_Localized: Menu de pausa
     m_Metadata:
       m_Items: []
   references:
