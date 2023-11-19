@@ -15,6 +15,8 @@ public class Vida_gatos : MonoBehaviour, I_Interact
     private MeshRenderer _meshRenderer;
     [SerializeField] private Material defaultMaterial;
     [SerializeField] private Material readyToSellMaterial;
+    [SerializeField] private GameObject modelNoOutline;
+    [SerializeField] private GameObject modelOutline;
 
     public Material DefaultMaterial => defaultMaterial;
     public Material ReadyToSellMaterial => readyToSellMaterial;
@@ -39,7 +41,8 @@ public class Vida_gatos : MonoBehaviour, I_Interact
         {
             if (_currentHunger < _maxHunger / 2)
             {
-                ChangMaterial(defaultMaterial);
+                modelOutline.SetActive(true);
+                modelNoOutline.SetActive(false);
             }
         }
         
@@ -63,7 +66,8 @@ public class Vida_gatos : MonoBehaviour, I_Interact
         {
             if (_currentHunger > _maxHunger / 2)
             {
-                ChangMaterial(readyToSellMaterial);
+                modelOutline.SetActive(true);
+                modelNoOutline.SetActive(false);
             }
         }
     }
@@ -78,7 +82,8 @@ public class Vida_gatos : MonoBehaviour, I_Interact
 
     public void ChangMaterial(Material newMaterial)
     {
-        _meshRenderer.material = newMaterial;
+        modelOutline.SetActive(true);
+        modelNoOutline.SetActive(false);
     }
     
     

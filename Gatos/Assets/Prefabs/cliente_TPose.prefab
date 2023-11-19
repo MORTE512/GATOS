@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 82731643543926306}
   m_Layer: 0
   m_Name: cliente_TPose
-  m_TagString: Untagged
+  m_TagString: Client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,9 +130,9 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001068143804441391}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 1.57
   m_Height: 2.7751737
   m_Direction: 1
   m_Center: {x: 0, y: 1.3103132, z: 0}
@@ -145,7 +145,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1001068143804441391}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.35
+  m_Radius: 1.25
   m_Speed: 3.5
   m_Acceleration: 100
   avoidancePriority: 50
@@ -172,6 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minTimeIdle: 3
   maxTimeIdle: 5
+  _navMeshAgent: {fileID: 82731643543926307}
   animator: {fileID: 5786982946990842863}
 --- !u!1 &1018072318151065716
 GameObject:
@@ -184,7 +185,7 @@ GameObject:
   - component: {fileID: 5404038405930768641}
   m_Layer: 0
   m_Name: mixamorig:Hips
-  m_TagString: Untagged
+  m_TagString: Client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1016,7 +1017,7 @@ GameObject:
   - component: {fileID: 7223130418072217442}
   m_Layer: 0
   m_Name: subtool2
-  m_TagString: Untagged
+  m_TagString: Client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

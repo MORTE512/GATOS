@@ -8,9 +8,13 @@ public class Client : MonoBehaviour, I_Interact
     [SerializeField] private float minTimeIdle;
     [SerializeField] private float maxTimeIdle;
 
-    private NavMeshAgent _navMeshAgent;
+    [SerializeField] private NavMeshAgent _navMeshAgent;
     private Transform _target;
     public Animator animator;
+    
+
+
+
 
     private int counterRemainingDistance;
 
@@ -55,7 +59,7 @@ public class Client : MonoBehaviour, I_Interact
 
     }
 
-
+   
     public void Interact()
     {
         UIManager.Instance.ShowClientDialog();
