@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1568128449728512
-    m_Localized: Luminosite
+    m_Localized: "Luminosit\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 1568130119061504
@@ -68,10 +68,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1814815613210624
     m_Localized: Tu as perdu!
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3250850189094912
-    m_Localized: Menu Pause
     m_Metadata:
       m_Items: []
   references:

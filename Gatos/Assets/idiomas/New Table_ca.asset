@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1567067097878528
-    m_Localized: ' Volum de la musica'
+    m_Localized: " Volum de la m\xFAsica"
     m_Metadata:
       m_Items: []
   - m_Id: 1568128449728512
@@ -51,7 +51,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1568596672466944
-    m_Localized: Nombre de gats donats en adopcio
+    m_Localized: "Nombre de gats donats en adopci\xF3"
     m_Metadata:
       m_Items: []
   - m_Id: 1568730013585408
@@ -68,10 +68,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1814815613210624
     m_Localized: Has perdut!
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3250850189094912
-    m_Localized: Menu de pausa
     m_Metadata:
       m_Items: []
   references:

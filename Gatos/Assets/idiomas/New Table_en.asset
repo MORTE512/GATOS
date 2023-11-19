@@ -70,10 +70,6 @@ MonoBehaviour:
     m_Localized: GAME OVER!
     m_Metadata:
       m_Items: []
-  - m_Id: 3250850189094912
-    m_Localized: Pause menu
-    m_Metadata:
-      m_Items: []
   references:
     version: 2
     RefIds: []
