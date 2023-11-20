@@ -10,7 +10,9 @@ public class CountdownTimer : MonoBehaviour
     private float tiempoRestante;
     private bool seReprodujoSonido = false;
     private bool juegoPausado = false;
+    public GameObject panelPausa;
     public GameObject panelOpciones;
+
 
     private void Start()
     {
@@ -61,7 +63,8 @@ public class CountdownTimer : MonoBehaviour
     {
         juegoPausado = true;
         Time.timeScale = 0f;
-        panelOpciones.SetActive(true);
+        panelPausa.SetActive(true);
+        
         // Detiene el tiempo del juego
         // Aquí puedes activar el panel de pausa si lo tienes
     }
@@ -70,6 +73,7 @@ public class CountdownTimer : MonoBehaviour
     {
         juegoPausado = false;
         Time.timeScale = 1f;
+        panelPausa.SetActive(false);
         panelOpciones.SetActive(false);
         // Reanuda el tiempo del juego
         // Aquí puedes desactivar el panel de pausa si lo tienes
