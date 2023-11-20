@@ -54,7 +54,7 @@ public class CountdownTimer : MonoBehaviour
     void ActualizarUI()
     {
         int segundos = Mathf.CeilToInt(tiempoRestante);
-        contadorText.text = "Tiempo restante: " + segundos + "s";
+        contadorText.text = "" + segundos + "s";
     }
 
     void PausarJuego()
