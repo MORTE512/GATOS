@@ -29,6 +29,10 @@ MonoBehaviour:
     m_Address: Assets/shaders/Somke_run/Smoke_jogging.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: e823cd5b5d27c0f4b8256e7c12ee3e6d
+    m_Address: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 65098ed56297fbe4bb05ce95216e1a87, type: 2}
   m_SchemaSet:
