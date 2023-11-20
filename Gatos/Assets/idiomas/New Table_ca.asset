@@ -70,6 +70,10 @@ MonoBehaviour:
     m_Localized: Has perdut!
     m_Metadata:
       m_Items: []
+  - m_Id: 3665969947168768
+    m_Localized: '"Puc adoptar un gat?"'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -71,6 +71,10 @@ MonoBehaviour:
     m_Key: Has perdido!
     m_Metadata:
       m_Items: []
+  - m_Id: 3665969947168768
+    m_Key: "\"\xBFPuedo adoptar un gato?\""
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
