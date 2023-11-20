@@ -32,6 +32,9 @@ public class Movement : MonoBehaviour, I_Interact
 
     public Animator animator;
 
+    [SerializeField]
+    private ParticleSystem smokeParticles;
+
     private void Awake()
     {
         if(instance == null) instance = this;
@@ -58,6 +61,21 @@ public class Movement : MonoBehaviour, I_Interact
             _target = _inMovementTarget.transform.position;
         }
         agent.SetDestination(_target);
+
+        if (smokeParticles != null)
+        {
+            if (animator.GetBool("jogging"))
+            {
+                if (!smokeParticles.isPlaying)
+                {
+                    smokeParticles.Play();
+                }
+            }
+            else
+            {
+                smokeParticles.Stop();
+            }
+        }
 
 
 

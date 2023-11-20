@@ -21,6 +21,14 @@ MonoBehaviour:
     m_Address: Assets/Scenes/MainMenu_Profiles/Post-process Volume Profile.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 2b9025ed9f472eb44818467a6cba647f
+    m_Address: Assets/shaders/Somke_run/somke_jogging.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 72f470a6495fbda4fa32ae07257ac97f
+    m_Address: Assets/shaders/Somke_run/Smoke_jogging.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 65098ed56297fbe4bb05ce95216e1a87, type: 2}
   m_SchemaSet:
