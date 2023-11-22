@@ -1,17 +1,19 @@
 using UnityEngine;
+using System.Collections;
+
 
 [RequireComponent(typeof(BoxCollider))]
 public class Food : MonoBehaviour, I_Interact
 {
     [SerializeField] private float _hungerToReplenish;
-   
+
     public Rigidbody rb { private set; get; }
 
     private void Awake()
     {
         GetComponent<BoxCollider>().isTrigger = true;
         rb = GetComponent<Rigidbody>();
-        
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -37,3 +39,5 @@ public class Food : MonoBehaviour, I_Interact
         RecogerComida.instance.PickUp(this);
     }
 }
+
+

@@ -694,6 +694,7 @@ GameObject:
   - component: {fileID: 7801232740242545368}
   - component: {fileID: 7801232740242545369}
   - component: {fileID: 7801232740242545374}
+  - component: {fileID: 7323882901002086460}
   m_Layer: 6
   m_Name: Comida
   m_TagString: comida
@@ -784,8 +785,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 46.774544, y: 26.929626, z: 55.0276}
-  m_Center: {x: 0, y: 7.6439567, z: -0.9772943}
+  m_Size: {x: 46.774544, y: 23.87409, z: 55.0276}
+  m_Center: {x: 0, y: 9.171724, z: -0.9772943}
 --- !u!65 &7801232740242545368
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -797,8 +798,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 46.774544, y: 26.909187, z: 55.068108}
-  m_Center: {x: 0, y: 7.623346, z: -1.4513909}
+  m_Size: {x: 46.774544, y: 23.838017, z: 55.068108}
+  m_Center: {x: 0, y: 9.158932, z: -1.4513911}
 --- !u!54 &7801232740242545369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -828,3 +829,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hungerToReplenish: 10
+--- !u!114 &7323882901002086460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7801232740242545375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e9b086555726d14b8a13f9bbd222190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
