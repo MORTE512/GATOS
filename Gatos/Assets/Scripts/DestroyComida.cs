@@ -20,17 +20,17 @@ public class DestroyComida : MonoBehaviour
         if (other.CompareTag("Ground") && gameObject.CompareTag("comida"))
         {
             _isOnGround = false;
-            _timeOnGround = 0f; // Reiniciar el tiempo si ya no está en contacto con el suelo
+            _timeOnGround = 0f; 
         }
     }
     private void Update()
     {
         if (_isOnGround)
         {
-            _timeOnGround += Time.deltaTime; // Contar el tiempo en el suelo
+            _timeOnGround += Time.deltaTime; 
             if (_timeOnGround > _timeThreshold)
             {
-                Destroy(gameObject); // Destruir el objeto si ha estado en el suelo durante más de 3 segundos
+                Destroy(gameObject); 
             }
         }
     }
