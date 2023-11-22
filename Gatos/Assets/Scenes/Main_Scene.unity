@@ -816,7 +816,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 24d5569021eed744bb661b7dfbbd7a02, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 94383359dc9d0c242b7d08582a0962fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2411,7 +2411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &337633456
 Transform:
   m_ObjectHideFlags: 0
@@ -7905,6 +7905,10 @@ PrefabInstance:
       propertyPath: transformCameraTarget
       value: 
       objectReference: {fileID: 592024563}
+    - target: {fileID: 4704785993343012020, guid: 66b2d2d8c86151047a2c1f9c36c73bac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4704785993436473649, guid: 66b2d2d8c86151047a2c1f9c36c73bac, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7952,6 +7956,18 @@ PrefabInstance:
     - target: {fileID: 4704785993436473679, guid: 66b2d2d8c86151047a2c1f9c36c73bac, type: 3}
       propertyPath: m_Name
       value: CatModel_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704785994076098156, guid: 66b2d2d8c86151047a2c1f9c36c73bac, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704785994076098156, guid: 66b2d2d8c86151047a2c1f9c36c73bac, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704785994076098156, guid: 66b2d2d8c86151047a2c1f9c36c73bac, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4704785994881656604, guid: 66b2d2d8c86151047a2c1f9c36c73bac, type: 3}
       propertyPath: m_AnchorMax.x
