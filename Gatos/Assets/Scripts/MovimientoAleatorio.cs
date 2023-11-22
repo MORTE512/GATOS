@@ -92,23 +92,23 @@ public class MovimientoAleatorio : MonoBehaviour
     public void Arriba()
     {
         RB_Mesh_Gato_No_Subrallado.velocity = transform.up * speed;
-        RB_Mesh_Mesh_Gato_Subrallado.velocity = transform.up * speed;
-        RB_Mesh_Gato_Subrallado_Low_live.velocity = transform.up * speed;
-        RB_Mesh_Gato_Subrallado_Shell.velocity = transform.up * speed;
+        //RB_Mesh_Mesh_Gato_Subrallado.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
+        //RB_Mesh_Gato_Subrallado_Low_live.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
+        //RB_Mesh_Gato_Subrallado_Shell.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
     }
     public void Abajo()
     {
         RB_Mesh_Gato_No_Subrallado.velocity = transform.up * -speed;
-        RB_Mesh_Mesh_Gato_Subrallado.velocity = transform.up * -speed;
-        RB_Mesh_Gato_Subrallado_Low_live.velocity = transform.up * -speed;
-        RB_Mesh_Gato_Subrallado_Shell.velocity = transform.up * -speed;
+        //RB_Mesh_Mesh_Gato_Subrallado.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
+        //RB_Mesh_Gato_Subrallado_Low_live.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
+        //RB_Mesh_Gato_Subrallado_Shell.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
     }
     public void Stop()
     {
         RB_Mesh_Gato_No_Subrallado.velocity = transform.up * stop;
-        RB_Mesh_Mesh_Gato_Subrallado.velocity = transform.up * stop;
-        RB_Mesh_Gato_Subrallado_Low_live.velocity = transform.up * stop;
-        RB_Mesh_Gato_Subrallado_Shell.velocity = transform.up * stop;
+        //RB_Mesh_Mesh_Gato_Subrallado.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
+        //RB_Mesh_Gato_Subrallado_Low_live.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
+        //RB_Mesh_Gato_Subrallado_Shell.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
     }
 
     IEnumerator CorrutinaIdle()
