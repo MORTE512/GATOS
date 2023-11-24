@@ -84,7 +84,7 @@ public class Vida_gatos : MonoBehaviour, I_Interact
             if (_currentHunger <= 50f)
             {
                 model_low_live.SetActive(true);
-                modelNoOutline.SetActive(false);
+                
                 modelOutline_shell.SetActive(false);
 
 
