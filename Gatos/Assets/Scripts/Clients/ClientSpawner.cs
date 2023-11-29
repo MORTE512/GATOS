@@ -26,6 +26,8 @@ public class ClientSpawner : MonoBehaviour
         {
             if (_currentClients < maxClients)
             {
+                Debug.Log("eeee");
+                _currentClients++;
                 float randomTime = Random.Range(minTimeToSpawn, maxTimeToSpawn);
                 yield return new WaitForSeconds(randomTime);
                 int randomIndex = Random.Range(0, spawnPoints.Length);
@@ -34,9 +36,8 @@ public class ClientSpawner : MonoBehaviour
                 Instantiate(clientsPrefab[randomIndexClients], spawnPoints[randomIndex].transform.position,
                     spawnPoints[randomIndex].transform.rotation);
                 
-                _currentClients++;
             }
-            yield return null;
+            yield return new WaitForSeconds(0.5f);
         }
     }
 

@@ -13,7 +13,7 @@ public class Puerta : MonoBehaviour
     {
         if (other.CompareTag("Client"))
         {
-            Debug.Log("hola");
+           
             _animator_puerta.SetTrigger("Abrir_puerta");
         }
 

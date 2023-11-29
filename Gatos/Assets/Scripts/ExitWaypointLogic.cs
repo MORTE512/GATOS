@@ -6,6 +6,7 @@ public class ExitWaypointLogic : MonoBehaviour
 {
 
     ClientSpawner clientSpawner;
+    bool playerEnter;
 
     private void Start()
     {
@@ -15,13 +16,15 @@ public class ExitWaypointLogic : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entras");
+
         if  (other.TryGetComponent(out Client client))
         {
-            if (client.clientBuyCat)
+            if (client.clientBuyCat && !playerEnter)
             {
+                playerEnter = true;
                 clientSpawner.SubtractClient();
                 Destroy(other.gameObject);
+                playerEnter = false;
             }
         }
     }

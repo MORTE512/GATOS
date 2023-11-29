@@ -24,6 +24,7 @@ public class Vida_gatos : MonoBehaviour, I_Interact
     [SerializeField] public GameObject model_low_live;
     [SerializeField] public GameObject model_subrallado;
     [SerializeField] public GameObject curacion;
+   
 
     public Material DefaultMaterial => defaultMaterial;
     public Material ReadyToSellMaterial => readyToSellMaterial;
@@ -58,7 +59,7 @@ public class Vida_gatos : MonoBehaviour, I_Interact
             if (_currentHunger < _maxHunger / 2)
             {
                 modelOutline_shell.SetActive(true);
-                modelNoOutline.SetActive(false);
+                modelNoOutline.SetActive(true);
                 model_low_live.SetActive(false);
             }
 
@@ -102,6 +103,7 @@ public class Vida_gatos : MonoBehaviour, I_Interact
     }
     public void ReplenishHunger(float hungerAmount)
     {
+        curacion.SetActive(true);
         _currentHunger += hungerAmount;
         if (_currentHunger > _maxHunger) _currentHunger = _maxHunger;
 
