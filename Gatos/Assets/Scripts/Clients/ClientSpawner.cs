@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 public class ClientSpawner : MonoBehaviour
 {
 
-    [SerializeField] private GameObject clientPrefab;
+    [SerializeField] private GameObject[] clientsPrefab;
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private float minTimeToSpawn;
     [SerializeField] private float maxTimeToSpawn;
@@ -30,7 +30,8 @@ public class ClientSpawner : MonoBehaviour
                 yield return new WaitForSeconds(randomTime);
                 int randomIndex = Random.Range(0, spawnPoints.Length);
 
-                Instantiate(clientPrefab, spawnPoints[randomIndex].transform.position,
+                int randomIndexClients = Random.Range(0, clientsPrefab.Length);
+                Instantiate(clientsPrefab[randomIndexClients], spawnPoints[randomIndex].transform.position,
                     spawnPoints[randomIndex].transform.rotation);
                 
                 _currentClients++;
@@ -38,4 +39,12 @@ public class ClientSpawner : MonoBehaviour
             yield return null;
         }
     }
+
+
+    public void SubtractClient()
+    {
+        _currentClients--;
+    }
+
+
 }

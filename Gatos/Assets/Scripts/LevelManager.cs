@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     public float MaximCats; //Cantidad Maxima de gatos en tiempo real
 
 
+    public Client clientSelected;
+
 
     [SerializeField] private List<Vida_gatos> catList = new List<Vida_gatos>();
     
@@ -84,7 +86,7 @@ public class LevelManager : MonoBehaviour
         UIManager.Instance.UpdateInfoNumberOfSellCats();
         Destroy(catToSell.gameObject);
         DisableCatsReadyToSell();
-        
+        LevelManager.instance.clientSelected.ClientBuyCat();
 
     }
 

@@ -8,6 +8,7 @@ public class WPClientsManager : MonoBehaviour
     public static WPClientsManager Instance => _instance;
 
     [SerializeField] private Transform[] wpClients;
+    [SerializeField] private Transform[] wpExitClients;
 
     private void Awake()
     {
@@ -26,6 +27,12 @@ public class WPClientsManager : MonoBehaviour
     {
         int randomIndex = Random.Range(0, wpClients.Length -1);
         return wpClients[randomIndex];
+    }
+
+    public Transform ReturnRandomExitWp()
+    {
+        int randomIndex = Random.Range(0, wpExitClients.Length - 1);
+        return wpExitClients[randomIndex];
     }
 
 }

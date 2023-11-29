@@ -11,10 +11,8 @@ public class Client : MonoBehaviour, I_Interact
     [SerializeField] private NavMeshAgent _navMeshAgent;
     private Transform _target;
     public Animator animator;
+    public bool clientBuyCat;
     
-
-
-
 
     private int counterRemainingDistance;
 
@@ -25,10 +23,13 @@ public class Client : MonoBehaviour, I_Interact
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _target = WPClientsManager.Instance.ReturnRandomWp();
         animator.SetBool("walking", true);
+        clientBuyCat = false;
     }
 
     private void Update()
     {
+        if (clientBuyCat) return;
+
         _navMeshAgent.SetDestination(_target.position);
         if (Vector3.Distance(transform.position, _target.transform.position) < 2f)
         {
@@ -60,9 +61,22 @@ public class Client : MonoBehaviour, I_Interact
     }
 
    
+    public void ClientBuyCat()
+    {
+        clientBuyCat = true;
+        StopAllCoroutines();
+        _navMeshAgent.isStopped = false;
+        animator.SetBool("walking", true);
+        _navMeshAgent.SetDestination(WPClientsManager.Instance.ReturnRandomExitWp().transform.position);
+    }
+
+
     public void Interact()
     {
+        if (clientBuyCat) return;
+
         UIManager.Instance.ShowClientDialog();
+        LevelManager.instance.clientSelected = this;
     }
 }
 
