@@ -74,6 +74,10 @@ MonoBehaviour:
     m_Localized: '"Puis-je adopter un chat ?"'
     m_Metadata:
       m_Items: []
+  - m_Id: 6924537752276992
+    m_Localized: pause
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

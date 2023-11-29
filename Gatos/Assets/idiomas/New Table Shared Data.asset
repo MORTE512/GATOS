@@ -75,6 +75,10 @@ MonoBehaviour:
     m_Key: "\"\xBFPuedo adoptar un gato?\""
     m_Metadata:
       m_Items: []
+  - m_Id: 6924537752276992
+    m_Key: pausa
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -9,7 +10,10 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance => instance;
     public float SellCatsCount = 0f;
     public float DeceasedCats = 0;
-    public float MaximCats; //Cantidad Maxima de gatos en tiempo real
+    public float MaximCats;
+    public Scene LoseScene;
+    public Scene WinScene;
+
 
 
     public Client clientSelected;
@@ -57,7 +61,7 @@ public class LevelManager : MonoBehaviour
     {
         if (MaximCats <= 0)
         {
-            UIManager.instance.WinCondition();
+            SceneManager.LoadScene("WinScene");
         }
     }
 
@@ -68,7 +72,7 @@ public class LevelManager : MonoBehaviour
         UIManager.Instance.UpdateInfoDeceasedCats();
         if (DeceasedCats >= 3)
         {
-            UIManager.Instance.LoseCondition();
+            SceneManager.LoadScene("LoseScene");
         }
         else
         {

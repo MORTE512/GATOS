@@ -74,6 +74,10 @@ MonoBehaviour:
     m_Localized: "\"\xBFPuedo adoptar un gato?\""
     m_Metadata:
       m_Items: []
+  - m_Id: 6924537752276992
+    m_Localized: Pausa
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

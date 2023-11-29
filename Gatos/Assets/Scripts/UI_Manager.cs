@@ -76,7 +76,7 @@ public class UI_Manager : MonoBehaviour
             }
         }
         SetGeneralVolume();
-        SetExposure();
+        
         SetMusicVolume();
         
 
@@ -136,16 +136,7 @@ public class UI_Manager : MonoBehaviour
         SetLanguage(currentLanguageCode);
     }
 
-    public void SetExposure()
-    {
-        
-        // Modifica la compensación de exposición con el valor del slider
-        autoExposure.keyValue.Override(sliderBrillo.value);
-
-        // Guarda el valor en PlayerPrefs
-        PlayerPrefs.SetFloat("ExposureValue", sliderBrillo.value);
-        PlayerPrefs.Save();
-    }
+   
 
     
 
