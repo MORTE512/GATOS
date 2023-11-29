@@ -58,8 +58,8 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.50125945
-          value: 0.5638298
+          time: 0.47858942
+          value: 0.62234044
           inSlope: 1
           outSlope: 1
           tangentMode: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
     m_Value: {x: 1, y: 1, z: 1, w: -0.14121802}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.052956756}
+    m_Value: {x: 1, y: 1, z: 1, w: 0.07943513}
 --- !u!114 &8048673906211037003
 MonoBehaviour:
   m_ObjectHideFlags: 3

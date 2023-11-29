@@ -23,6 +23,7 @@ public class Vida_gatos : MonoBehaviour, I_Interact
     [SerializeField] public GameObject modelOutline_shell;
     [SerializeField] public GameObject model_low_live;
     [SerializeField] public GameObject model_subrallado;
+    [SerializeField] public GameObject curacion;
 
     public Material DefaultMaterial => defaultMaterial;
     public Material ReadyToSellMaterial => readyToSellMaterial;
@@ -131,8 +132,11 @@ public class Vida_gatos : MonoBehaviour, I_Interact
         model_subrallado.SetActive(false);
         model_low_live.SetActive(false);
     }
-    
-    
+
+    public void descativar_curacion()
+    {
+        curacion.SetActive(false);
+    }
 
     public void Interact()
     {

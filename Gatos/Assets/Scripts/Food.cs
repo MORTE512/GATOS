@@ -21,7 +21,7 @@ public class Food : MonoBehaviour, I_Interact
         var Vida_gatos = other.gameObject.GetComponent<Vida_gatos>();
         if (Vida_gatos is null) return;
         if (!Vida_gatos._shouldEat) return;
-
+        Vida_gatos.Instance.curacion.SetActive(true);
         Vida_gatos.ReplenishHunger(_hungerToReplenish);
         Destroy(gameObject);
     }
