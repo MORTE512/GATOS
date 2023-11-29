@@ -930,7 +930,7 @@ GameObject:
   - component: {fileID: 1401831502}
   - component: {fileID: 1401831501}
   m_Layer: 5
-  m_Name: youWin_txt
+  m_Name: youLose_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -976,7 +976,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You win!
+  m_text: You lose!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54b05a8632f42034e87b8141fc5993c8, type: 2}
   m_sharedMaterial: {fileID: -595976829478795336, guid: 54b05a8632f42034e87b8141fc5993c8, type: 2}

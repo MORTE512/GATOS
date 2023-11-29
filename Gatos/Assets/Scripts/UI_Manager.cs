@@ -75,6 +75,10 @@ public class UI_Manager : MonoBehaviour
                 autoExposure.keyValue.Override(exposureValue);
             }
         }
+        SetGeneralVolume();
+        SetExposure();
+        SetMusicVolume();
+        
 
     }
 
