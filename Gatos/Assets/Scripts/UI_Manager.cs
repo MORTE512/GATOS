@@ -63,20 +63,20 @@ public class UI_Manager : MonoBehaviour
 
         //brillo
         // Intenta obtener la configuración de Auto Exposure del volumen
-        //if (postProcessVolume.profile.TryGetSettings(out autoExposure))
-       // {
-         //   Debug.Log("eeee");
+        if (postProcessVolume.profile.TryGetSettings(out autoExposure))
+        {
+            Debug.Log("eeee");
 
             // Intenta cargar el valor de exposición desde PlayerPrefs, si existe
-         //   if (PlayerPrefs.HasKey("ExposureValue"))
-       //     {
-       //         exposureValue = PlayerPrefs.GetFloat("ExposureValue");
+            if (PlayerPrefs.HasKey("ExposureValue"))
+            {
+                exposureValue = PlayerPrefs.GetFloat("ExposureValue");
                 // Aplica el valor guardado
-          //      autoExposure.keyValue.Override(exposureValue);
-       //     }
-     //   }
+                autoExposure.keyValue.Override(exposureValue);
+            }
+        }
         SetGeneralVolume();
-        //SetExposure();
+        SetExposure();
         SetMusicVolume();
         
 
@@ -136,16 +136,16 @@ public class UI_Manager : MonoBehaviour
         SetLanguage(currentLanguageCode);
     }
 
-  //  public void SetExposure()
-   // {
+    public void SetExposure()
+    {
         
         // Modifica la compensación de exposición con el valor del slider
-       // autoExposure.keyValue.Override(sliderBrillo.value);
+        autoExposure.keyValue.Override(sliderBrillo.value);
 
         // Guarda el valor en PlayerPrefs
-       // PlayerPrefs.SetFloat("ExposureValue", sliderBrillo.value);
-      //  PlayerPrefs.Save();
-   // }
+        PlayerPrefs.SetFloat("ExposureValue", sliderBrillo.value);
+        PlayerPrefs.Save();
+    }
 
     
 
