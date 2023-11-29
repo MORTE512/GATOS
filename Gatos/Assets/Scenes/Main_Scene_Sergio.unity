@@ -1674,7 +1674,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: -24.342, z: 0}
 --- !u!1 &139510434
 GameObject:
@@ -1707,7 +1707,7 @@ Transform:
   - {fileID: 455465224}
   - {fileID: 699036865}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &139937738
 PrefabInstance:
@@ -1889,7 +1889,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &199691804
 GameObject:
@@ -2256,7 +2256,7 @@ Transform:
   - {fileID: 543450652157829367}
   - {fileID: 543450651841592160}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &233755405 stripped
 Transform:
@@ -2696,7 +2696,7 @@ Transform:
   - {fileID: 6607431389431584053}
   - {fileID: 2024205512}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &270750414
 GameObject:
@@ -2904,6 +2904,7 @@ MonoBehaviour:
   model_low_live: {fileID: 1547316130}
   model_subrallado: {fileID: 1974016553}
   curacion: {fileID: 0}
+  gato_enfadado: {fileID: 0}
 --- !u!114 &273685912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4852,6 +4853,7 @@ MonoBehaviour:
   model_low_live: {fileID: 1170792827}
   model_subrallado: {fileID: 12139825}
   curacion: {fileID: 0}
+  gato_enfadado: {fileID: 0}
 --- !u!114 &485209648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5479,7 +5481,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 56.899, z: 0}
 --- !u!4 &561089536 stripped
 Transform:
@@ -5750,7 +5752,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &600267281
 GameObject:
@@ -5994,6 +5996,7 @@ MonoBehaviour:
   model_low_live: {fileID: 1303204331}
   model_subrallado: {fileID: 690370563}
   curacion: {fileID: 0}
+  gato_enfadado: {fileID: 0}
 --- !u!114 &610148903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6154,7 +6157,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &611333228
 PrefabInstance:
@@ -6262,7 +6265,7 @@ Transform:
   - {fileID: 610148897}
   - {fileID: 273685906}
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &625891441
 GameObject:
@@ -6723,7 +6726,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: -41.257, z: 0}
 --- !u!1 &654559441
 GameObject:
@@ -7226,7 +7229,7 @@ Transform:
   - {fileID: 1224775728}
   - {fileID: 571232289}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &723793044
 PrefabInstance:
@@ -8200,6 +8203,7 @@ MonoBehaviour:
   model_low_live: {fileID: 199691804}
   model_subrallado: {fileID: 1199549732}
   curacion: {fileID: 0}
+  gato_enfadado: {fileID: 0}
 --- !u!114 &809691765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8280,7 +8284,7 @@ Transform:
   - {fileID: 1876695158}
   - {fileID: 615659789}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844700881
 GameObject:
@@ -8686,7 +8690,7 @@ Transform:
   - {fileID: 2065999315}
   - {fileID: 337633456}
   m_Father: {fileID: 0}
-  m_RootOrder: 52
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &882293024
 GameObject:
@@ -8923,7 +8927,7 @@ Transform:
   m_Children:
   - {fileID: 543450653358092782}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &901768222
 Animator:
@@ -9018,7 +9022,7 @@ Transform:
   m_Children:
   - {fileID: 543450652133741502}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &956961827
 GameObject:
@@ -9885,7 +9889,7 @@ RectTransform:
   - {fileID: 8037637193738144502}
   - {fileID: 365702558}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9907,8 +9911,6 @@ MonoBehaviour:
   panelClientDialog: {fileID: 1282267602}
   contadorSellCatsText: {fileID: 1562352997}
   DeceasedCatsText: {fileID: 1632705937}
-  LosePanel: {fileID: 0}
-  WinaPanel: {fileID: 0}
 --- !u!114 &1086963051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9923,7 +9925,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiempoInicial: 169.1
   contadorText: {fileID: 2078995797}
-  panelLose: {fileID: 0}
   panelPausa: {fileID: 365702555}
   panelOpciones: {fileID: 8037637193738144503}
 --- !u!114 &1086963052
@@ -9954,8 +9955,6 @@ MonoBehaviour:
   musicVolume: 1
   MusicSlider: {fileID: 8037637193222040833}
   SourcGeneralSoundSlider: {fileID: 8037637193214090616}
-  sliderBrillo: {fileID: 8037637193655264102}
-  postProcessVolume: {fileID: 4381198699434337755}
 --- !u!114 &1086963053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10598,7 +10597,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 5.849, z: 0}
 --- !u!1 &1170792827
 GameObject:
@@ -11410,7 +11409,7 @@ Transform:
   - {fileID: 1416048761}
   - {fileID: 514454750}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1214709938
 GameObject:
@@ -11848,7 +11847,7 @@ Transform:
   - {fileID: 1028571181}
   - {fileID: 1861919750}
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1247526925
 GameObject:
@@ -12421,7 +12420,7 @@ Transform:
   - {fileID: 1966869833}
   - {fileID: 1265527906}
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1314655985
 GameObject:
@@ -12642,6 +12641,7 @@ MonoBehaviour:
   model_low_live: {fileID: 1585386983}
   model_subrallado: {fileID: 289617748}
   curacion: {fileID: 0}
+  gato_enfadado: {fileID: 0}
 --- !u!114 &1315973001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12829,7 +12829,7 @@ Transform:
   - {fileID: 1886051293}
   - {fileID: 2052412283}
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1346427388
 GameObject:
@@ -13604,7 +13604,7 @@ Transform:
   - {fileID: 1740605555}
   - {fileID: 262500467}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1443422334
 PrefabInstance:
@@ -13976,7 +13976,7 @@ Transform:
   - {fileID: 246677695}
   - {fileID: 1480939085}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1475470736
 MonoBehaviour:
@@ -14181,7 +14181,7 @@ Transform:
   - {fileID: 5802786738427155171}
   - {fileID: 8316635527836975287}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1496215567
 GameObject:
@@ -14464,7 +14464,7 @@ Transform:
   - {fileID: 2866234857196443381}
   - {fileID: 1632861501}
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1543375843
 GameObject:
@@ -14532,7 +14532,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1547316130
 GameObject:
@@ -16967,7 +16967,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 54
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1769421065
 PrefabInstance:
@@ -22777,7 +22777,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 53
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: -0.394, z: -0.192}
 --- !u!1 &1813501086
 GameObject:
@@ -23227,7 +23227,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1886051293 stripped
 Transform:
@@ -23272,7 +23272,7 @@ Transform:
   - {fileID: 96759861}
   - {fileID: 1139131154}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1893662261
 PrefabInstance:
@@ -23287,7 +23287,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4c69508d1a7f6114d87ce5ef48ebe8bf, type: 2}
     - target: {fileID: 1209817837850820674, guid: 2d16fc66828f909468eb02454bbfcf02, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1209817837850820674, guid: 2d16fc66828f909468eb02454bbfcf02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23616,7 +23616,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1921984551
 PrefabInstance:
@@ -24593,6 +24593,7 @@ MonoBehaviour:
   model_low_live: {fileID: 729858915}
   model_subrallado: {fileID: 632661157}
   curacion: {fileID: 0}
+  gato_enfadado: {fileID: 0}
 --- !u!114 &2013367627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25776,7 +25777,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0.201, z: 0}
 --- !u!1 &2102664862
 GameObject:
@@ -26429,7 +26430,7 @@ Transform:
   m_Children:
   - {fileID: 1082240228540717901}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543450651683527987 stripped
 Transform:
@@ -26454,7 +26455,7 @@ Transform:
   - {fileID: 1989176384}
   - {fileID: 509170212}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543450651841592160
 Transform:
@@ -26987,7 +26988,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1022143767532429666
 MeshRenderer:
@@ -29271,6 +29272,7 @@ MonoBehaviour:
   model_low_live: {fileID: 4704785993898566770}
   model_subrallado: {fileID: 4704785994080691392}
   curacion: {fileID: 0}
+  gato_enfadado: {fileID: 0}
 --- !u!65 &4704785994359369966
 BoxCollider:
   m_ObjectHideFlags: 0

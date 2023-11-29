@@ -27,8 +27,8 @@ public class UI_Manager : MonoBehaviour
     private string currentLanguageCode;
 
     //brillo
-    public Slider sliderBrillo;
-    public PostProcessVolume postProcessVolume;
+    
+   
     private AutoExposure autoExposure;
 
     // Variable para mantener el valor de exposición
@@ -63,18 +63,7 @@ public class UI_Manager : MonoBehaviour
 
         //brillo
         // Intenta obtener la configuración de Auto Exposure del volumen
-        if (postProcessVolume.profile.TryGetSettings(out autoExposure))
-        {
-            Debug.Log("eeee");
-
-            // Intenta cargar el valor de exposición desde PlayerPrefs, si existe
-            if (PlayerPrefs.HasKey("ExposureValue"))
-            {
-                exposureValue = PlayerPrefs.GetFloat("ExposureValue");
-                // Aplica el valor guardado
-                autoExposure.keyValue.Override(exposureValue);
-            }
-        }
+      
         SetGeneralVolume();
         
         SetMusicVolume();

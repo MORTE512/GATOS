@@ -5,7 +5,7 @@ public class CountdownTimer : MonoBehaviour
 {
     public float tiempoInicial = 60f; // Tiempo inicial en segundos
     public TMP_Text contadorText; // TextMeshPro en la UI que mostrará el contador
-    public GameObject panelLose; // Panel que se activará al llegar a cero
+    // Panel que se activará al llegar a cero
 
     private float tiempoRestante;
     private bool seReprodujoSonido = false;
@@ -30,7 +30,7 @@ public class CountdownTimer : MonoBehaviour
                 if (tiempoRestante <= 0)
                 {
                     tiempoRestante = 0;
-                    panelLose.SetActive(true); // Activa el panel cuando el contador llega a cero
+                     // Activa el panel cuando el contador llega a cero
 
                     seReprodujoSonido = true; // Ajusta el flag para que no se reproduzca el sonido repetidamente
                     Time.timeScale = 0f;
