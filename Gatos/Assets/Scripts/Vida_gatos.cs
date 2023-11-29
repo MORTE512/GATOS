@@ -24,7 +24,8 @@ public class Vida_gatos : MonoBehaviour, I_Interact
     [SerializeField] public GameObject model_low_live;
     [SerializeField] public GameObject model_subrallado;
     [SerializeField] public GameObject curacion;
-   
+    [SerializeField] public GameObject gato_enfadado;
+
 
     public Material DefaultMaterial => defaultMaterial;
     public Material ReadyToSellMaterial => readyToSellMaterial;
@@ -86,7 +87,7 @@ public class Vida_gatos : MonoBehaviour, I_Interact
             if (_currentHunger <= 50f)
             {
                 model_low_live.SetActive(true);
-                
+                gato_enfadado.SetActive(true);
                 modelOutline_shell.SetActive(false);
 
 
@@ -96,7 +97,7 @@ public class Vida_gatos : MonoBehaviour, I_Interact
         {
             model_low_live.SetActive(false);
             modelNoOutline.SetActive(true);
-
+            gato_enfadado.SetActive(false);
         }
 
 
