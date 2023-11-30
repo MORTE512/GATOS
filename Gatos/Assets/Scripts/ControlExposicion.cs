@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
@@ -27,8 +28,9 @@ public class ControlExposicion : MonoBehaviour
             return;
         }
 
-        // Cargar el valor inicial del slider desde PlayerPrefs
-        sliderExposicion.value = PlayerPrefs.GetFloat("Exposicion", colorAdjustments.postExposure.value);
+        sliderExposicion.value = PlayerPrefs.GetFloat("brilloValue");
+        colorAdjustments.postExposure.Override(sliderExposicion.value);
+        // Cargar el valor inicial del slider desde el objeto persistente
 
         // Suscribirse al evento de cambio de valor del slider
         sliderExposicion.onValueChanged.AddListener(CambiarExposicion);
@@ -39,8 +41,8 @@ public class ControlExposicion : MonoBehaviour
         // Actualiza el valor de exposición en el componente ColorAdjustments
         colorAdjustments.postExposure.Override(valor);
 
-        // Guardar el valor en PlayerPrefs
-        PlayerPrefs.SetFloat("Exposicion", valor);
+        // Actualiza el valor en el objeto persistente
+        PlayerPrefs.SetFloat("brilloValue", valor);
         PlayerPrefs.Save();
     }
 }
