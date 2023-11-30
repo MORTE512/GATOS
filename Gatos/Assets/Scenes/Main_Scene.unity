@@ -1988,7 +1988,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 39.780334, y: 432.78558}
+  m_AnchoredPosition: {x: 39.780273, y: 432.78558}
   m_SizeDelta: {x: -726.4943, y: -865.5712}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &77825060
@@ -7934,7 +7934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.12660417, y: 0.05}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -122.54, y: -13.544}
+  m_AnchoredPosition: {x: -122.54004, y: -13.543945}
   m_SizeDelta: {x: 54.7006, y: -244.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &601957246
@@ -10303,7 +10303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.12660417, y: 0.05}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -122.54, y: -13.544}
+  m_AnchoredPosition: {x: -122.54004, y: -13.543945}
   m_SizeDelta: {x: 54.7006, y: -244.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &726322795
@@ -12469,6 +12469,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 600705049}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &881313419
 MonoBehaviour:
@@ -20731,10 +20743,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 944864394}
+        m_TargetAssemblyTypeName: CountdownTimer, Assembly-CSharp
+        m_MethodName: ReanudarJuego
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
