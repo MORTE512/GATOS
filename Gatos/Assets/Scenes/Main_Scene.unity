@@ -535,8 +535,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '"Puis-je adopter un chat ?"'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e2dc071e9490185468ddd91450eb4376, type: 2}
-  m_sharedMaterial: {fileID: 8620150107948470514, guid: e2dc071e9490185468ddd91450eb4376, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9016251fff9f6bf4a8146b9d7395a320, type: 2}
+  m_sharedMaterial: {fileID: 2225693221024821900, guid: 9016251fff9f6bf4a8146b9d7395a320, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -560,8 +560,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 75.94
-  m_fontSizeBase: 75.94
+  m_fontSize: 57.32
+  m_fontSizeBase: 57.32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1672,7 +1672,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 944864393}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: SetLanguage
         m_Mode: 5
@@ -4591,7 +4591,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3bb47c840335f0b448a1c5659f3f1af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e5d550a28362c94f8d1325cdec02fbb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6517,7 +6517,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 944864393}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: SetGeneralVolume
         m_Mode: 1
@@ -10014,7 +10014,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 944864393}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: SetLanguage
         m_Mode: 5
@@ -17033,7 +17033,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 944864393}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: SetLanguage
         m_Mode: 5
@@ -20372,7 +20372,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.646, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -21120,9 +21120,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 240158364}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 0.513
+  m_MaxValue: 1.03
   m_WholeNumbers: 0
-  m_Value: 0.365
+  m_Value: 0.187
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -21766,7 +21766,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 944864393}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: SetLanguage
         m_Mode: 5
@@ -22530,7 +22530,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db155f6ecb509c84f962a645eca1134d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 775cf41bc7482724a8c7fb18c007261c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33754,8 +33754,8 @@ RectTransform:
   m_Father: {fileID: 775478765}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.646, y: 0}
-  m_AnchorMax: {x: 0.646, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -2.2590027, y: -1.9421005}
   m_SizeDelta: {x: 55, y: -53.8842}
   m_Pivot: {x: 0.5, y: 0.5}

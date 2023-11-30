@@ -34,6 +34,7 @@ public class ControlExposicion : MonoBehaviour
 
         // Suscribirse al evento de cambio de valor del slider
         sliderExposicion.onValueChanged.AddListener(CambiarExposicion);
+        
     }
 
     public void CambiarExposicion(float valor)

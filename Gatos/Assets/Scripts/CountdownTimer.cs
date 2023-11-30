@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class CountdownTimer : MonoBehaviour
                 if (tiempoRestante <= 0)
                 {
                     tiempoRestante = 0;
-                     // Activa el panel cuando el contador llega a cero
+                    SceneManager.LoadScene("LoseScene"); // Activa el panel cuando el contador llega a cero
 
                     seReprodujoSonido = true; // Ajusta el flag para que no se reproduzca el sonido repetidamente
                     Time.timeScale = 0f;
