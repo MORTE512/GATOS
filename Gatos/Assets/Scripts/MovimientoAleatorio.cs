@@ -18,6 +18,7 @@ public class MovimientoAleatorio : MonoBehaviour
     public Rigidbody RB_Mesh_Gato_Subrallado_Low_live;
     private NavMeshAgent navMeshAgent;
     private bool esperando;
+    public ParticleSystem Gatos;
 
     [SerializeField] private Animator animator;
 
@@ -95,6 +96,7 @@ public class MovimientoAleatorio : MonoBehaviour
         //RB_Mesh_Mesh_Gato_Subrallado.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
         //RB_Mesh_Gato_Subrallado_Low_live.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
         //RB_Mesh_Gato_Subrallado_Shell.transform.position = RB_Mesh_Gato_No_Subrallado.transform.position;
+        Gatos.Play();
     }
     public void Abajo()
     {
