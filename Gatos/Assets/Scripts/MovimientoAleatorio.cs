@@ -13,9 +13,7 @@ public class MovimientoAleatorio : MonoBehaviour
     public float speed;
     public float stop;
     public Rigidbody RB_Mesh_Gato_No_Subrallado;
-    public Rigidbody RB_Mesh_Mesh_Gato_Subrallado;
-    public Rigidbody RB_Mesh_Gato_Subrallado_Shell;
-    public Rigidbody RB_Mesh_Gato_Subrallado_Low_live;
+   
     private NavMeshAgent navMeshAgent;
     private bool esperando;
     public ParticleSystem Gatos;
