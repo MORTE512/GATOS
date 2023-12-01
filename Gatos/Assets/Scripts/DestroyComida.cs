@@ -6,7 +6,7 @@ public class DestroyComida : MonoBehaviour
 {
     private bool _isOnGround = false;
     private float _timeOnGround = 0f;
-    private const float _timeThreshold = 3f; // Tiempo límite en el suelo
+    private const float _timeThreshold = 0.5f; // Tiempo límite en el suelo
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Ground") && gameObject.CompareTag("comida"))
