@@ -69,8 +69,8 @@ public class UI_Manager : MonoBehaviour
         SetMusicVolume();
         PlayerPrefs.GetFloat("SourcGeneralSoundSlider", SourcGeneralSoundSlider.value);
         PlayerPrefs.GetFloat("musicValue", SourcGeneralSoundSlider.value);
-        
 
+        PlayerPrefs.Save();
 
 
 
