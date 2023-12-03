@@ -10,6 +10,7 @@ public class FeederLogic : MonoBehaviour, I_Interact
     public void Interact()
     {
         Food foodGo = Instantiate(foodPrefab, transform.position, transform.rotation);
+        Sound_manager.instance.SeleccionAudio(2, 0.7f);
         foodGo.Interact();
     }
 }

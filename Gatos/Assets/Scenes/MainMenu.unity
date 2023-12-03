@@ -10120,6 +10120,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6085764795858863314, guid: d68898b2db34b9b489dc2f980325a405, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 062ad166106bc1144b62202aff9ba084, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d68898b2db34b9b489dc2f980325a405, type: 3}
 --- !u!4 &834628458 stripped
@@ -18171,6 +18175,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6085764795858863314, guid: d68898b2db34b9b489dc2f980325a405, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 062ad166106bc1144b62202aff9ba084, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d68898b2db34b9b489dc2f980325a405, type: 3}
 --- !u!4 &1557649032 stripped
@@ -23667,7 +23675,7 @@ PrefabInstance:
     - target: {fileID: 3279783260250482359, guid: 08da8d6a49a9c7f48b7dfaf2b05e6b67, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 820a56e45e534124abb934424fea340f, type: 2}
+      objectReference: {fileID: 2100000, guid: b1d4afee481d51740a3e6f530ddfd07f, type: 2}
     - target: {fileID: 3928507834440812386, guid: 08da8d6a49a9c7f48b7dfaf2b05e6b67, type: 3}
       propertyPath: m_Name
       value: Lamparadepie_low_2
@@ -24091,7 +24099,7 @@ MonoBehaviour:
   m_MinValue: -2
   m_MaxValue: 1.5
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: -2
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -24103,7 +24111,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: -2
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
