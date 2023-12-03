@@ -2860,7 +2860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 1
+  _hungerDepletionRate: 0.5
   _currentHunger: 0
   SliderHungerCat: {fileID: 735987307}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -11990,7 +11990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 1
+  _hungerDepletionRate: 0.5
   _currentHunger: 0
   SliderHungerCat: {fileID: 1957197118}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -13742,7 +13742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05a875fc8fe34445bca41bbd7276635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoInicial: 300
+  tiempoInicial: 500
   contadorText: {fileID: 601957247}
   panelPausa: {fileID: 600705049}
   panelOpciones: {fileID: 726322793}
@@ -15522,7 +15522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 1
+  _hungerDepletionRate: 0.5
   _currentHunger: 0
   SliderHungerCat: {fileID: 18514433}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -18558,7 +18558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 1
+  _hungerDepletionRate: 0.5
   _currentHunger: 0
   SliderHungerCat: {fileID: 1850781947}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -25439,7 +25439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 1
+  _hungerDepletionRate: 0.5
   _currentHunger: 0
   SliderHungerCat: {fileID: 1403171005}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -27567,7 +27567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 1
+  _hungerDepletionRate: 0.5
   _currentHunger: 0
   SliderHungerCat: {fileID: 43820995}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -29663,7 +29663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 1
+  _hungerDepletionRate: 0.5
   _currentHunger: 0
   SliderHungerCat: {fileID: 499516993}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -32892,7 +32892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 1
+  _hungerDepletionRate: 0.5
   _currentHunger: 0
   SliderHungerCat: {fileID: 4704785994148702076}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}

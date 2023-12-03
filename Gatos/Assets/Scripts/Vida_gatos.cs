@@ -9,7 +9,7 @@ public class Vida_gatos : MonoBehaviour, I_Interact
 
     [Header("Hunger")]
     [SerializeField] public float _maxHunger = 100f;
-    [SerializeField] public float _hungerDepletionRate = 1f;
+    [SerializeField] public float _hungerDepletionRate;
     [SerializeField] private float _currentHunger;
     public Slider SliderHungerCat;
 
