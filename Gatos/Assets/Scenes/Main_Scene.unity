@@ -9635,8 +9635,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audios:
-  - {fileID: 8300000, guid: 019e9c71ff0a17943b12e5a8d4e7a5a9, type: 3}
-  - {fileID: 8300000, guid: 0825495f676a9064aadffbf5b5893690, type: 3}
+  - {fileID: 8300000, guid: c2f25f90cb1057e4da2476d3f994a996, type: 3}
+  - {fileID: 8300000, guid: 5f057a1c1a045ac40a3fabaf5808fb2f, type: 3}
   - {fileID: 8300000, guid: 141427164a17a974889faa00d2304fec, type: 3}
   controlAudio: {fileID: 691605106}
 --- !u!4 &691605108

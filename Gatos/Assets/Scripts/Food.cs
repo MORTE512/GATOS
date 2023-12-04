@@ -17,7 +17,7 @@ public class Food : MonoBehaviour, I_Interact
     private void OnTriggerEnter(Collider other)
     {
         if (!other.gameObject.CompareTag("Cat")) return;
-        Sound_manager.instance.SeleccionAudio(0, 0.5f);
+        Sound_manager.instance.SeleccionAudio(0, 0.25f);
         var Vida_gatos = other.gameObject.GetComponent<Vida_gatos>();
         if (Vida_gatos is null) return;
         if (!Vida_gatos._shouldEat) return;

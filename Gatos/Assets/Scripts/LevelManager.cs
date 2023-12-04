@@ -88,7 +88,7 @@ public class LevelManager : MonoBehaviour
         WinCondition();
         UIManager.Instance.UpdateInfoNumberOfSellCats();
         Destroy(catToSell.gameObject);
-        Sound_manager.instance.SeleccionAudio(1, 05f);
+        Sound_manager.instance.SeleccionAudio(1, 0.2f);
         DisableCatsReadyToSell();
         LevelManager.instance.clientSelected.ClientBuyCat();
 
