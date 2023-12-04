@@ -12,6 +12,7 @@ TagManager:
   - FirstWP
   - Puerta
   - Client
+  - Outside
   layers:
   - Default
   - TransparentFX

@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 
 [RequireComponent(typeof(BoxCollider))]
@@ -38,6 +37,11 @@ public class Food : MonoBehaviour, I_Interact
         }
 
         RecogerComida.instance.PickUp(this);
+    }
+
+    public bool InsideTheStore()
+    {
+        return true;
     }
 }
 

@@ -13,4 +13,9 @@ public class FeederLogic : MonoBehaviour, I_Interact
         Sound_manager.instance.SeleccionAudio(2, 0.7f);
         foodGo.Interact();
     }
+
+    public bool InsideTheStore()
+    {
+        return true;
+    }
 }

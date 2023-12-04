@@ -112,6 +112,8 @@ public class Movement : MonoBehaviour, I_Interact
             {
                 if (hit.collider.TryGetComponent(out I_Interact objectInteractable))
                 {
+                    if (!objectInteractable.InsideTheStore()) return;
+                    
                     _objectSelected = hit.transform;
                     _inMovementTarget = hit.collider.gameObject;
                     _target = _inMovementTarget.transform.position;
@@ -167,6 +169,11 @@ public class Movement : MonoBehaviour, I_Interact
     public void Interact()
     {
         _shouldEat = true;
+    }
+
+    public bool InsideTheStore()
+    {
+        return true;
     }
 
     private void DisableShouldEat()

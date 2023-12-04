@@ -853,6 +853,7 @@ GameObject:
   - component: {fileID: 6732930340580103709}
   - component: {fileID: 6732930340580103708}
   - component: {fileID: 7242236992807319137}
+  - component: {fileID: 1422212897026139787}
   m_Layer: 0
   m_Name: cliente_TPose_not_outline 1
   m_TagString: Client
@@ -964,6 +965,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a98993d14422be4f976e9504b3598ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &1422212897026139787
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5886562781406741265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5941704641445699658
 GameObject:
   m_ObjectHideFlags: 0

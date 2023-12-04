@@ -142,4 +142,9 @@ public class Vida_gatos : MonoBehaviour, I_Interact
     public void Interact()
     {
     }
+
+    public bool InsideTheStore()
+    {
+        return true;
+    }
 }

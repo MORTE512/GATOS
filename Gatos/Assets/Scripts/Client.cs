@@ -1,7 +1,8 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-using System.Collections.Generic;
+using Random = UnityEngine.Random;
 
 public class Client : MonoBehaviour, I_Interact
 {
@@ -17,6 +18,7 @@ public class Client : MonoBehaviour, I_Interact
     private int counterRemainingDistance;
 
     private bool courotineActive = false;
+    private bool imInsideTheStore = false;
 
     private void Start()
     {
@@ -77,6 +79,27 @@ public class Client : MonoBehaviour, I_Interact
 
         UIManager.Instance.ShowClientDialog();
         LevelManager.instance.clientSelected = this;
+    }
+
+    public bool InsideTheStore()
+    {
+        return imInsideTheStore;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Outside"))
+        {
+            imInsideTheStore = false;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Outside"))
+        {
+            imInsideTheStore = true;
+        }
     }
 }
 
