@@ -67,7 +67,6 @@ public class LevelManager : MonoBehaviour
 
     public void AddDeceasedCats() 
     {
-        MaximCats -= 1f;
         DeceasedCats += 1f;
         UIManager.Instance.UpdateInfoDeceasedCats();
         if (DeceasedCats >= 3)

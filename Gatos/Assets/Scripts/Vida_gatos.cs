@@ -7,16 +7,15 @@ public class Vida_gatos : MonoBehaviour, I_Interact
     public static Vida_gatos Instance => instance;
 
 
-    [Header("Hunger")]
-    [SerializeField] public float _maxHunger = 100f;
+    [Header("Hunger")] [SerializeField] public float _maxHunger = 100f;
     [SerializeField] public float _hungerDepletionRate;
     [SerializeField] private float _currentHunger;
     public Slider SliderHungerCat;
 
 
-    [Space]
-    [Header("---- FEEDBACK MATERIALS ----")]
+    [Space] [Header("---- FEEDBACK MATERIALS ----")]
     private MeshRenderer _meshRenderer;
+
     [SerializeField] private Material defaultMaterial;
     [SerializeField] private Material readyToSellMaterial;
     [SerializeField] public GameObject modelNoOutline;
@@ -27,10 +26,12 @@ public class Vida_gatos : MonoBehaviour, I_Interact
     [SerializeField] public GameObject gato_enfadado;
 
 
+    private bool imDead;
+
     public Material DefaultMaterial => defaultMaterial;
     public Material ReadyToSellMaterial => readyToSellMaterial;
 
-    public bool _shouldEat {private set; get;}
+    public bool _shouldEat { private set; get; }
 
     private void Awake()
     {
@@ -38,7 +39,6 @@ public class Vida_gatos : MonoBehaviour, I_Interact
         {
             instance = this;
         }
-        
     }
 
     private void Start()
@@ -46,8 +46,9 @@ public class Vida_gatos : MonoBehaviour, I_Interact
         _meshRenderer = GetComponent<MeshRenderer>();
         _currentHunger = _maxHunger;
         _shouldEat = true;
+        imDead = false;
     }
-   
+
 
     private void Update()
     {
@@ -63,9 +64,9 @@ public class Vida_gatos : MonoBehaviour, I_Interact
                 modelNoOutline.SetActive(true);
                 model_low_live.SetActive(false);
             }
-
         }
-       if(LevelManager.instance.SalesModeActivated == false)
+
+        if (LevelManager.instance.SalesModeActivated == false)
         {
             model_low_live.SetActive(false);
             modelOutline_shell.SetActive(false);
@@ -73,25 +74,23 @@ public class Vida_gatos : MonoBehaviour, I_Interact
         }
 
 
-            if (_currentHunger <= 0)
-            {
+        if (_currentHunger <= 0 && !imDead)
+        {
+            imDead = true;
             _currentHunger = 0;
             LevelManager.Instance.RemoveCatToList(this);
             LevelManager.Instance.AddDeceasedCats();
             Destroy(gameObject);
-
-            }
-
-        
-        
-            if (_currentHunger <= 50f)
-            {
-                model_low_live.SetActive(true);
-                gato_enfadado.SetActive(true);
-                modelOutline_shell.SetActive(false);
+            return;
+        }
 
 
-            }
+        if (_currentHunger <= 50f)
+        {
+            model_low_live.SetActive(true);
+            gato_enfadado.SetActive(true);
+            modelOutline_shell.SetActive(false);
+        }
 
         if (_currentHunger >= 50f)
         {
@@ -99,9 +98,8 @@ public class Vida_gatos : MonoBehaviour, I_Interact
             modelNoOutline.SetActive(true);
             gato_enfadado.SetActive(false);
         }
-
-
     }
+
     public void ReplenishHunger(float hungerAmount)
     {
         curacion.SetActive(true);
