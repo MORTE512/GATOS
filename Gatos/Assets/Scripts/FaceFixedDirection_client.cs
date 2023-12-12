@@ -1,7 +1,7 @@
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class FaceFixedDirection_client : MonoBehaviour
+public class FaceFixedDirection_Sprites : MonoBehaviour
 {
     public Transform transformCameraTarget; // La dirección a la que quieres que mire el Slider
     
@@ -11,7 +11,7 @@ public class FaceFixedDirection_client : MonoBehaviour
     private void Start()
     {
         transformCameraTarget = GameObject.FindGameObjectWithTag("target").transform;
-        curacion.SetActive(true);
+        curacion.SetActive(false);
     }
     void Update()
     {
@@ -19,5 +19,8 @@ public class FaceFixedDirection_client : MonoBehaviour
         transform.LookAt(transformCameraTarget);
         
     }
-   
+    public void descativar_curacion()
+    {
+        curacion.SetActive(false);
+    }
 }

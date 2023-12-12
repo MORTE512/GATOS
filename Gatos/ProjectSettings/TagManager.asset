@@ -13,6 +13,7 @@ TagManager:
   - Puerta
   - Client
   - Outside
+  - target
   layers:
   - Default
   - TransparentFX

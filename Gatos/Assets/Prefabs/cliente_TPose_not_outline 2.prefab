@@ -545,8 +545,8 @@ GameObject:
   - component: {fileID: 7428821579157459396}
   - component: {fileID: 4422688736222788547}
   - component: {fileID: 494402937433258036}
-  - component: {fileID: 2024368297972809822}
   - component: {fileID: 3045818507214027119}
+  - component: {fileID: 8433155002622045868}
   m_Layer: 11
   m_Name: Image
   m_TagString: Untagged
@@ -612,20 +612,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2024368297972809822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3934702134383277664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8aa97190e13a24895ba1d596253d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transformCameraTarget: {fileID: 0}
-  offset: 0
 --- !u!95 &3045818507214027119
 Animator:
   serializedVersion: 5
@@ -647,6 +633,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8433155002622045868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3934702134383277664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2846d86277dd6f548a7046b8327b1753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformCameraTarget: {fileID: 0}
+  offset: 3
+  curacion: {fileID: 3934702134383277664}
 --- !u!1 &4194951202440133924
 GameObject:
   m_ObjectHideFlags: 0
