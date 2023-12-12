@@ -2860,7 +2860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 0.5
+  _hungerDepletionRate: 1
   _currentHunger: 0
   SliderHungerCat: {fileID: 735987307}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -2903,7 +2903,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 133219121}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 28.5
+  m_Radius: 26.7
   m_Speed: 5
   m_Acceleration: 700
   avoidancePriority: 50
@@ -11990,7 +11990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 0.5
+  _hungerDepletionRate: 1.3
   _currentHunger: 0
   SliderHungerCat: {fileID: 1957197118}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -12033,7 +12033,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 833191002}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 28.5
+  m_Radius: 26.7
   m_Speed: 5
   m_Acceleration: 700
   avoidancePriority: 50
@@ -15565,7 +15565,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1081807564}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 28.5
+  m_Radius: 26.7
   m_Speed: 5
   m_Acceleration: 700
   avoidancePriority: 50
@@ -18558,7 +18558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 0.5
+  _hungerDepletionRate: 1
   _currentHunger: 0
   SliderHungerCat: {fileID: 1850781947}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -18601,7 +18601,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1357897166}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 28.5
+  m_Radius: 26.7
   m_Speed: 5
   m_Acceleration: 700
   avoidancePriority: 50
@@ -25501,7 +25501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 0.5
+  _hungerDepletionRate: 1
   _currentHunger: 0
   SliderHungerCat: {fileID: 1403171005}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -25544,7 +25544,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1831028480}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 28.5
+  m_Radius: 26.7
   m_Speed: 5
   m_Acceleration: 700
   avoidancePriority: 50
@@ -27629,7 +27629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 0.5
+  _hungerDepletionRate: 1.3
   _currentHunger: 0
   SliderHungerCat: {fileID: 43820995}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -27672,7 +27672,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1974313204}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 28.5
+  m_Radius: 26.7
   m_Speed: 5
   m_Acceleration: 700
   avoidancePriority: 50
@@ -29657,7 +29657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 0.5
+  _hungerDepletionRate: 0.7
   _currentHunger: 0
   SliderHungerCat: {fileID: 499516993}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}
@@ -29700,7 +29700,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2138715289}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 28.5
+  m_Radius: 26.7
   m_Speed: 5
   m_Acceleration: 700
   avoidancePriority: 50
@@ -32881,7 +32881,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4704785994359369879}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 28.5
+  m_Radius: 26.7
   m_Speed: 5
   m_Acceleration: 700
   avoidancePriority: 50
@@ -32998,7 +32998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHunger: 100
-  _hungerDepletionRate: 0.5
+  _hungerDepletionRate: 1
   _currentHunger: 0
   SliderHungerCat: {fileID: 4704785994148702076}
   defaultMaterial: {fileID: 2100000, guid: 840ed0d561e0ba348a99e3ae2010c5ec, type: 2}

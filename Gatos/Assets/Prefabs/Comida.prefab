@@ -828,7 +828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9ab46a6db53004aa81e26e43d927b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hungerToReplenish: 10
+  _hungerToReplenish: 15
 --- !u!114 &7323882901002086460
 MonoBehaviour:
   m_ObjectHideFlags: 0

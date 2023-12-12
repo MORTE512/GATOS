@@ -26,7 +26,7 @@ public class ClientSpawner : MonoBehaviour
         {
             if (_currentClients < maxClients)
             {
-                Debug.Log("eeee");
+
                 _currentClients++;
                 float randomTime = Random.Range(minTimeToSpawn, maxTimeToSpawn);
                 yield return new WaitForSeconds(randomTime);
